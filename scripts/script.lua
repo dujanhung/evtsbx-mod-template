@@ -23,5 +23,8 @@ end
 function canConnect(blockType,thisConnectionIndex,otherConnectionIndex,reverse)
 end
 
+function onSignalReceived(value,fromGuid,toConnectionIndex)
+end
+
 function message(msg)
 end
