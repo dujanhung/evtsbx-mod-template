@@ -20,14 +20,12 @@
    "smoothness":0.5,
    "scale":1.0,
    "colliderOptions":{
-    {
-     "SizeX":1.0,
-     "SizeY":1.0,
-     "SizeZ":1.0,
-     "OffsetX":0.0,
-     "OffsetY":0.0,
-     "OffsetZ":0.0
-    }
+    "SizeX":1.0,
+    "SizeY":1.0,
+    "SizeZ":1.0,
+    "OffsetX":0.0,
+    "OffsetY":0.0,
+    "OffsetZ":0.0
    },
    "meshOptions":{
     "OffsetY":0.0
