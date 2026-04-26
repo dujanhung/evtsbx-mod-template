@@ -23,7 +23,7 @@ end
 function canConnect(blockType,thisIdx,otherIdx,reverse)
 end
 
-function onSignalReceived(value,fromGuid,idx)
+function onSignalReceived(value,guid,idx)
 end
 
 function message(msg)
