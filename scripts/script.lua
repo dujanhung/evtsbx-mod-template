@@ -6,6 +6,7 @@ function start()
 end
 
 function update()
+ es.CreateMultiblock("SoccerBall",r,{0.0,0.5,0.0},q.Euler(0.0,0.0,0.0))
 end
 
 function fixedUpdate()
