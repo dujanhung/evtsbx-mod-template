@@ -20,5 +20,8 @@ end
 function onButtonUp()
 end
 
+function canConnect(blockType,thisConnectionIndex,otherConnectionIndex,reverse)
+end
+
 function message(msg)
 end
