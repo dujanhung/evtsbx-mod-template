@@ -1,3 +1,4 @@
-before using this template, you should:
+before using this template in "Evertech Sandbox" , you should:
 
 - remove all MD files.
+- remove `.github/` folder
