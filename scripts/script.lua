@@ -1,8 +1,8 @@
 function onPlace()
+ print("hello world")
 end
 
 function start()
- print("hello world")
 end
 
 function update()
