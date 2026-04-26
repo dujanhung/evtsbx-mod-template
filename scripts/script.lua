@@ -20,10 +20,10 @@ end
 function onButtonUp()
 end
 
-function canConnect(itemType,thisConnectionIndex,otherConnectionIndex,reverse)
+function canConnect(blockType,thisIdx,otherIdx,reverse)
 end
 
-function onSignalReceived(value,fromGuid,toConnectionIndex)
+function onSignalReceived(value,fromGuid,idx)
 end
 
 function message(msg)
