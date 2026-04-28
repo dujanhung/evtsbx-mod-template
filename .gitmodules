@@ -1,3 +1,6 @@
 [submodule "extra-lua-preset"]
 path="addons"
 url=https://github.com/dujanhung/extra-lua-preset.git
+[submodule "extra-lua-preset"]
+path="addons"
+url=https://github.com/dujanhung/evtsbx-mod-lua-preset.git
