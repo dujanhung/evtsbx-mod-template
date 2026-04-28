@@ -14,7 +14,7 @@ jobs:
       submodules: true
    - name: update submodule
      run: |
-      git submodule sync
+      git submodule update --init
    - name: commit
      run: |
       git config user.name "github-actions"
