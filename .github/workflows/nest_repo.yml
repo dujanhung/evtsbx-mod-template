@@ -18,6 +18,7 @@ jobs:
      run: |
       git config user.name "github-actions"
       git config user.email "github-actions@github.com"
-      git add addons/*
+      git add addons/extra_lua_presets
+      git add addons/evtsbx-mod-lua-preset
       git commit -m "update submodule" || echo "no changes"
       git push
