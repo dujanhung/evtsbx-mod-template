@@ -1,6 +1,8 @@
 name: nest repo
 on:
  push:
+  paths:
+   - '.gitmodules'
 jobs:
  update-submodule:
   runs-on: ubuntu-latest
