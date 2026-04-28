@@ -22,7 +22,9 @@ function onButtonUp()
 end
 
 function canConnect(blockType,thisIdx,otherIdx,reverse)
- if blockType=="DriverSeat"or blockType=="PassengerSeat"then
+ if blockType=="DriverSeat"then
+  return false
+ if blockType=="PassengerSeat"then
   return false
  end
  return true
