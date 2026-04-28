@@ -20,7 +20,7 @@ function onButtonDown()
 end
 
 function onButtonUp()
- mb.Destroy()
+ mb.destroy()
 end
 
 function canConnect(blockType,thisIdx,otherIdx,reverse)
