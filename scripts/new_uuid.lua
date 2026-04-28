@@ -4,6 +4,7 @@ function onPlace()
 end
 
 function start()
+ es.enableButton(true)
 end
 
 function update()
