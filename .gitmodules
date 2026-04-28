@@ -2,6 +2,7 @@
 path="addons/extra-lua-preset"
 url=https://github.com/dujanhung/extra-lua-preset.git
 branch="main"
+
 [submodule "addons/evtsbx-mod-lua-preset"]
 path="addons/evtsbx-mod-lua-preset"
 url=https://github.com/dujanhung/evtsbx-mod-lua-preset.git
