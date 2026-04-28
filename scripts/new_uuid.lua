@@ -24,6 +24,7 @@ end
 function canConnect(blockType,thisIdx,otherIdx,reverse)
  if blockType=="DriverSeat"then
   return false
+ end
  if blockType=="PassengerSeat"then
   return false
  end
