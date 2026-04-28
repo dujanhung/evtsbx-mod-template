@@ -16,7 +16,7 @@ jobs:
      run: |
       git submodule set-branch --branch main addons/*
       git submodule update --remote --merge
-   - name: commit updated submodule pointer
+   - name: commit
      run: |
       git config user.name "github-actions"
       git config user.email "github-actions@github.com"
