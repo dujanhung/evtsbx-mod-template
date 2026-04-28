@@ -14,7 +14,6 @@ jobs:
       submodules: true
    - name: update submodule
      run: |
-      git submodule set-branch --branch main .gitmodules
       git submodule update --remote --merge
    - name: commit
      run: |
