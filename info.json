@@ -6,15 +6,15 @@
  "preview":"image.png"
  "simpleblocks":[
   {
-   "uuid":"random_uuid",
+   "uuid":"new_uuid",
    "name":"new MOD block",
    "description":"sample text",
-   "icon":"icon.png",
-   "dif":"dif.png",
-   "nor":"nor.png",
-   "met":"met.png",
-   "mesh":"mesh.obj",
-   "script":"script.lua",
+   "icon":"textures/icons/new_uuid.png",
+   "dif":"textures/difs/new_uuid.png",
+   "nor":"textures/nors/new_uuid.png",
+   "met":"textures/mets/new_uuid.png",
+   "mesh":"meshes/new_uuid.obj",
+   "script":"scripts/new_uuid.lua",
    "collider":"sizable_wheel",
    "normScale":1.0,
    "smoothness":0.5,
