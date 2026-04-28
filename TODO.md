@@ -9,3 +9,10 @@ required presets:
 - https://github.com/dujanhung/evtsbx-mod-lua-preset
 
 put all presets in `addons` folder.
+
+example:
+
+```
+ROOT/addons/extra-lua-preset
+ROOT/addons/evtsbx-mod-lua-preset
+```
