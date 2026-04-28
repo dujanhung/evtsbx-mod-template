@@ -13,8 +13,8 @@ put all presets in `addons` folder.
 example:
 
 ```
-ROOT/addons/extra-lua-preset
-ROOT/addons/evtsbx-mod-lua-preset
+ROOT/addons/extra-lua-preset/*
+ROOT/addons/evtsbx-mod-lua-preset/*
 ```
 
 make scripts executable via:
