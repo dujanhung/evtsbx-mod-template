@@ -14,7 +14,7 @@ jobs:
       submodules: true
    - name: update submodule
      run: |
-      git submodule update --remote --merge
+      git submodule sync
    - name: commit
      run: |
       git config user.name "github-actions"
