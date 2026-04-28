@@ -1,3 +1,5 @@
+dofile("addons_orchestrator/ALL.lua")
+
 function onPlace()
 end
 
