@@ -3,7 +3,7 @@
  "description":"sample text"
  "author":"user"
  "version":"1.0"
- "preview":"textures/prev/1.png"
+ "preview":"prev/1.png"
  "simpleblocks":[
   {
    "uuid":"new_uuid",
