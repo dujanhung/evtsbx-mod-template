@@ -22,6 +22,10 @@ function onButtonUp()
 end
 
 function canConnect(blockType,thisIdx,otherIdx,reverse)
+ if blockType=="DriverSeat"or blockType=="PassengerSeat"then
+  return false
+ end
+ return true
 end
 
 function onSignalReceived(value,guid,idx)
