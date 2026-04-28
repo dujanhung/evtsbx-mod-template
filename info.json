@@ -3,13 +3,13 @@
  "description":"sample text"
  "author":"user"
  "version":"1.0"
- "preview":"textures/previews/1.png"
+ "preview":"previews/1.png"
  "simpleblocks":[
   {
    "uuid":"new_uuid",
    "name":"new MOD block",
    "description":"sample text",
-   "icon":"textures/icons/new_uuid.png",
+   "icon":"simpleblocks/icon.png",
    "dif":"textures/difs/new_uuid.png",
    "nor":"textures/nors/new_uuid.png",
    "met":"textures/mets/new_uuid.png",
