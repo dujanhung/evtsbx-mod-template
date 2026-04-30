@@ -13,3 +13,11 @@ jobs:
       cd addons
       git submodule add https://github.com/dujanhung/extra-lua-preset
       git submodule add https://github.com/dujanhung/evtsbx-mod-lua-preset
+ upload-artifact:
+  runs-on: ubuntu-latest
+  steps:
+   - name: checkout repo
+     uses: actions/checkout@v4
+   - name: create zip file
+     run: |
+      echo "."
