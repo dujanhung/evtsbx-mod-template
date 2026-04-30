@@ -1,20 +1,12 @@
-name: Gitmodules Pipeline
-
+name: gitmodules pipeline
 on:
-  workflow_dispatch:
-
-  push:
-    paths:
-      - ".gitmodules"
-      - "scripts/**"
-      - ".github/workflows/gitmodules.yml"
-
+ workflow_dispatch:
+ push:
+  paths:
+   - ".gitmodules"
   pull_request:
-    paths:
-      - ".gitmodules"
-      - "scripts/**"
-      - ".github/workflows/gitmodules.yml"
-
+   paths:
+    - ".gitmodules"
 jobs:
   validate-scripts:
     runs-on: ubuntu-latest
