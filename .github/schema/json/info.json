@@ -3,23 +3,23 @@
  "description":"s",
  "author":"s",
  "version":"s",
- "preview required":"png",
- "simpleblocks allow.multiple":[
+ "preview|required":"png",
+ "simpleblocks|allow.multiple":[
   {
-   "uuid required unique":"s",
+   "uuid|required,unique":"s",
    "name":"s",
    "description":"s",
-   "icon required":"png",
+   "icon|required":"png",
    "dif":"png",
    "nor":"png",
    "met":"png",
-   "mesh required":"obj",
+   "mesh|required":"obj",
    "script":"lua",
-   "collider enum":"wheel,sizable_wheel",
+   "collider|enum.s":"wheel,sizable_wheel",
    "normScale":"uf",
    "smoothness":"lf",
    "scale":"f",
-   "colliderOptions need.collider.sizable_wheel":{
+   "colliderOptions|need.collider=sizable_wheel":{
     "SizeX":"f",
     "SizeY":"f",
     "SizeZ":"f",
@@ -27,12 +27,12 @@
     "OffsetY":"f",
     "OffsetZ":"f"
    },
-   "meshOptions need.collider.sizable_wheel":{
+   "meshOptions|need.collider=sizable_wheel":{
     "OffsetY":"f"
    },
-   "connections allow.multiple":[
+   "connections|allow.multiple":[
     {
-     "type required":"signalReceiver,signalSender,signalReceiverSender",
+     "type|required,enum.s":"signalReceiver,signalSender,signalReceiverSender",
      "color":"hex",
      "connectionsLimit":"ui",
      "relativePosition":{
