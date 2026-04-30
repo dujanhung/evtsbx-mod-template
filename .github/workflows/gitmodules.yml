@@ -20,7 +20,7 @@ jobs:
        -x ".github/*"
    - name: checkout upload artifact
      uses: actions/upload-artifact@v4
-   - name: create zip file
+   - name: upload zip file
      with:
       name: evtsbx-mod-template
       path: evtsbx-mod-template.zip
