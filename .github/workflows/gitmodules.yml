@@ -15,6 +15,7 @@ jobs:
       git submodule add https://github.com/dujanhung/evtsbx-mod-lua-preset
    - name: create cache folder
      run: |
+      cd ..
       cd .github
       mkdir cache
       cd cache
