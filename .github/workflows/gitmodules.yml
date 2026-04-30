@@ -17,7 +17,7 @@ jobs:
       git submodule update --remote
    - name: commit
      run: |
-      git config user.name "dujanhung"
-      git config user.email "chanhung2008.duong@gmail.com"
+      git config --local user.name "dujanhung"
+      git config --local user.email "chanhung2008.duong@gmail.com"
       git commit -m "sync submodules"
       git push
