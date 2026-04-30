@@ -93,7 +93,6 @@ jobs:
    - name: setup ssh
      run: |
       mkdir -p ~/.ssh
-      chmod 700 ~/.ssh
       ssh-keyscan github.com >> ~/.ssh/known_hosts
       eval "$(ssh-agent -s)"
       export SSH_ASKPASS=$(mktemp)
