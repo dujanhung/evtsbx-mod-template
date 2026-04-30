@@ -1,2 +1,47 @@
 {
+ "name":"s",
+ "description":"s",
+ "author":"s",
+ "version":"s",
+ "preview required":"png",
+ "simpleblocks":[
+  {
+   "uuid required unique":"s",
+   "name":"s",
+   "description":"s",
+   "icon required":"png",
+   "dif":"png",
+   "nor":"png",
+   "met":"png",
+   "mesh required":"obj",
+   "script":"lua",
+   "collider":"wheel,sizable_wheel",
+   "normScale":"uf",
+   "smoothness":"lf",
+   "scale":"f",
+   "colliderOptions need.collider.sizable_wheel":{
+    "SizeX":"f",
+    "SizeY":"f",
+    "SizeZ":"f",
+    "OffsetX":"f",
+    "OffsetY":"f",
+    "OffsetZ":"f"
+   },
+   "meshOptions need.collider.sizable_wheel":{
+    "OffsetY":"f"
+   },
+   "connections":[
+    {
+     "type":"signalReceiver,signalSender,signalReceiverSender",
+     "color":"hex",
+     "connectionsLimit":"ui",
+     "relativePosition":{
+      "X":"f",
+      "Y":"f",
+      "Z":"f"
+     }
+    }
+   ]
+  }
+ ]
 }
