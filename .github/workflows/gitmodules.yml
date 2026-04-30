@@ -119,7 +119,7 @@ jobs:
       chmod +x "$SSH_ASKPASS"
       DISPLAY=:0 SSH_ASKPASS="$SSH_ASKPASS" setsid ssh-add ~/.ssh/id_rsa < /dev/null
       rm -f "$SSH_ASKPASS"
-   - name: commit changes
+   - name: commit
      run: |
       git config --local user.name "github-actions[bot]"
       git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
