@@ -8,7 +8,7 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - name: get checkout
-     uses: actions/checkout@v4
+     uses: actions/checkout@v5
    - name: add submodules
      run: |
       mkdir addons
@@ -20,7 +20,7 @@ jobs:
      run: |
       zip -r -9 evtsbx-mod-template.zip . -x ".github/*" -x "*/.github/*" -x ".git/*" -x "*/.git" -x ".gitmodules" -x "*/.gitmodules" -x "*.md"
    - name: upload ZIP file
-     uses: actions/upload-artifact@v4
+     uses: actions/upload-artifact@v5
      with:
       name: evtsbx-mod-template
       path: evtsbx-mod-template.zip
