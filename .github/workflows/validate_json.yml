@@ -2,7 +2,7 @@ name: validate JSON
 on:
  push:
   - "*.json"
- pull-request:
+ pull-requests:
   - "*.json"
 env:
  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
