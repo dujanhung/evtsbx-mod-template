@@ -4,7 +4,7 @@
  "author":"s",
  "version":"s",
  "preview required":"png",
- "simpleblocks":[
+ "simpleblocks allow.multiple":[
   {
    "uuid required unique":"s",
    "name":"s",
@@ -30,7 +30,7 @@
    "meshOptions need.collider.sizable_wheel":{
     "OffsetY":"f"
    },
-   "connections":[
+   "connections allow.multiple":[
     {
      "type required":"signalReceiver,signalSender,signalReceiverSender",
      "color":"hex",
