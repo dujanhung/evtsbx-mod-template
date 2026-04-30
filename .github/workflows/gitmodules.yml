@@ -11,8 +11,8 @@ jobs:
       fetch-depth: 0
    - name: clone submodules
      run: |
-      git submodule add https://github.com/dujanhung/extra-lua-preset
-      git submodule add https://github.com/dujanhung/evtsbx-mod-lua-preset
+      git submodule add https://github.com/dujanhung/extra-lua-preset addons/extra-lua-preset
+      git submodule add https://github.com/dujanhung/evtsbx-mod-lua-preset addons/extra-lua-preset
       git submodule sync --recursive
       git submodule update --init --recursive
    - name: commit
