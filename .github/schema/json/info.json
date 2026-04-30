@@ -15,7 +15,7 @@
    "met":"png",
    "mesh required":"obj",
    "script":"lua",
-   "collider":"wheel,sizable_wheel",
+   "collider enum":"wheel,sizable_wheel",
    "normScale":"uf",
    "smoothness":"lf",
    "scale":"f",
