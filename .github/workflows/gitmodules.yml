@@ -14,7 +14,3 @@ jobs:
       git submodule add https://github.com/dujanhung/extra-lua-preset
       git submodule add https://github.com/dujanhung/evtsbx-mod-lua-preset
       git submodule sync --recursive
-   - name: commit
-     run: |
-      git commit -m "sync submodules"
-      git push
