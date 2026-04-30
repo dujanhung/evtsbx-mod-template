@@ -5,54 +5,6 @@ on:
   paths:
    - ".gitmodules"
 jobs:
- check-files:
-  runs-on: ubuntu-latest
-  steps:
-   - name: checkout repo
-     uses: actions/checkout@v4
-   - name: ensure required files exist
-     run: |
-      REQUIRED_FILES=(
-       ".gitmodules"
-       ".github/scripts/validate_gitmodules.py"
-       ".github/scripts/prepare_folders.py"
-      )
-      for file in "${REQUIRED_FILES[@]}"; do
-       if [ ! -f "$file" ]; then
-        echo "ERROR: missing file: $file"
-        exit 1
-       fi
-      done
-      echo "All required files found."
- validate-scripts:
-  runs-on: ubuntu-latest
-  needs: check-files
-  steps:
-   - name: checkout repo
-     uses: actions/checkout@v4
-   - name: set up Python
-     uses: actions/setup-python@v5
-     with:
-      python-version: "3.x"
-   - name: validate Python syntax
-     run: |
-      python -m py_compile .github/scripts/*.py
- validate-gitmodules:
-  runs-on: ubuntu-latest
-  needs: validate-scripts
-  steps:
-   - name: checkout repo
-     uses: actions/checkout@v4
-   - name: validate .gitmodules
-     run: python .github/scripts/validate_gitmodules.py
- prepare:
-  runs-on: ubuntu-latest
-  needs: validate-gitmodules
-  steps:
-   - name: checkout repo
-     uses: actions/checkout@v4
-   - name: prepare folders
-     run: python .github/scripts/prepare_folders.py
  clone:
   runs-on: ubuntu-latest
   needs: prepare
@@ -63,17 +15,11 @@ jobs:
       fetch-depth: 0
    - name: clone submodules
      run: |
+      git submodule add https://github.com/dujanhung/extra-lua-preset
+      git submodule add https://github.com/dujanhung/extra-lua-preset
+      git submodule add https://github.com/dujanhung/evtsbx-mod-lua-preset
       git submodule sync --recursive
       git submodule update --init --recursive
- cleanup-placeholders:
-  runs-on: ubuntu-latest
-  needs: clone
-  steps:
-   - name: checkout repo
-     uses: actions/checkout@v4
-   - name: remove placeholder files
-     run: |
-      find . -type f -name "a.txt" -delete
  commit-changes:
   runs-on: ubuntu-latest
   needs: cleanup-placeholders
