@@ -12,6 +12,6 @@ jobs:
    - name: validate
      run: |
       file="info.json"
-      echo "check $file"
+      echo "queue $file"
       jq empty "$file"
       echo "validated $file"
