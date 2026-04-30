@@ -96,7 +96,7 @@ jobs:
       chmod +x .github/scripts/*.sh
       ls -l .github/scripts/*.sh
       eval "$(ssh-agent -s)"
-      DISPLAY=:0 SSH_ASKPASS=$SSH_PASSPHRASE setsid ssh-add $SSH_PRIVATE_KEY
+      DISPLAY=:0 SSH_ASKPASS=.github/scripts/enter_SSH_passphrase.sh setsid ssh-add $SSH_PRIVATE_KEY
    - name: commit
      run: |
       git config --local user.name "github-actions[bot]"
