@@ -4,78 +4,61 @@ on:
  push:
   paths:
    - ".gitmodules"
-  pull_request:
-   paths:
-    - ".gitmodules"
+ pull_request:
+  paths:
+   - ".gitmodules"
 jobs:
-  validate-scripts:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.x"
-
-      - name: Validate Python syntax
-        run: |
-          python -m py_compile scripts/validate_gitmodules.py
-          python -m py_compile scripts/prepare_folders.py
-
-      - name: Validate shell syntax
-        run: |
-          bash -n scripts/clone_submodules.sh
-
-  make-executable:
-    runs-on: ubuntu-latest
-    needs: validate-scripts
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Make Bash scripts executable
-        run: |
-          find scripts -type f -name "*.sh" -exec chmod +x {} \;
-
-      - name: Verify permissions
-        run: |
-          ls -l scripts/*.sh
-
-  validate-gitmodules:
-    runs-on: ubuntu-latest
-    needs: make-executable
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Validate .gitmodules
-        run: python scripts/validate_gitmodules.py
-
-  prepare:
-    runs-on: ubuntu-latest
-    needs: validate-gitmodules
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Prepare folders
-        run: python scripts/prepare_folders.py
-
-  clone:
-    runs-on: ubuntu-latest
-    needs: validate-gitmodules
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Clone submodules
-        run: ./scripts/clone_submodules.sh
+ validate-scripts:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Checkout repository
+     uses: actions/checkout@v4
+   - name: Set up Python
+     uses: actions/setup-python@v5
+      with:
+       python-version: "3.x"
+   - name: Validate Python syntax
+     run: |
+      python -m py_compile scripts/validate_gitmodules.py
+      python -m py_compile scripts/prepare_folders.py
+   - name: Validate shell syntax
+     run: |
+      bash -n .github/scripts/submodules.sh
+ make-executable:
+  runs-on: ubuntu-latest
+  needs: validate-scripts
+  steps:
+   - name: Checkout repository
+     uses: actions/checkout@v4
+   - name: Make Bash scripts executable
+     run: |
+      find scripts -type f -name "*.sh" -exec chmod +x {} \;
+   - name: Verify permissions
+     run: |
+      ls -l scripts/*.sh
+ validate-gitmodules:
+  runs-on: ubuntu-latest
+  needs: make-executable
+  steps:
+   - name: Checkout repository
+     uses: actions/checkout@v4
+   - name: Validate .gitmodules
+     run: python scripts/validate_gitmodules.py
+ prepare:
+  runs-on: ubuntu-latest
+  needs: validate-gitmodules
+  steps:
+   - name: Checkout repository
+     uses: actions/checkout@v4
+   - name: Prepare folders
+     run: python scripts/prepare_folders.py
+ clone:
+  runs-on: ubuntu-latest
+  needs: validate-gitmodules
+  steps:
+   - name: Checkout repository
+     uses: actions/checkout@v4
+      with:
+       fetch-depth: 0
+   - name: Clone submodules
+      run: ./scripts/clone_submodules.sh
