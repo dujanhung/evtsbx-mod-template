@@ -16,7 +16,7 @@ jobs:
      run: |
       for file in *.json; do
        if jq empty "$file" >/dev/null 2>&1; then
-        done
+        exit 0
        else
         exit 1
        fi
