@@ -13,16 +13,15 @@ jobs:
       cd addons
       git submodule add https://github.com/dujanhung/extra-lua-preset
       git submodule add https://github.com/dujanhung/evtsbx-mod-lua-preset
-   - name: create cache folder
+   - name: create zip file
      run: |
-      cd .
-      cd .github
-      mkdir cache
-      cd cache
+      zip -r changes.zip . \
+       -x ".git/*" \
+       -x ".github/*"
    - name: checkout upload artifact
      uses: actions/upload-artifact@v4
    - name: create zip file
      with:
       name: evtsbx-mod-template
-      path: .github/cache
+      path: evtsbx-mod-template.zip
       
