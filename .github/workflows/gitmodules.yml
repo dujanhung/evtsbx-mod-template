@@ -2,7 +2,7 @@ name: pack repo as ZIP file
 on:
  workflow_dispatch:
 jobs:
- pack:
+ pack-zip:
   runs-on: ubuntu-latest
   steps:
    - name: get checkout
