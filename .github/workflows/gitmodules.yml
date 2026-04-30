@@ -5,7 +5,7 @@ jobs:
  clone:
   runs-on: ubuntu-latest
   steps:
-   - name: checkout repo
+   - name: get checkout
      uses: actions/checkout@v4
    - name: clone submodules
      run: |
@@ -18,7 +18,7 @@ jobs:
       zip -r -9 evtsbx-mod-template.zip . \
        -x ".git/*" \
        -x ".github/*"
-   - name: checkout upload artifact
+   - name: get upload artifact
      uses: actions/upload-artifact@v4
    - name: upload ZIP file
      with:
