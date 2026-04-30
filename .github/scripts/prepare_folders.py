@@ -13,4 +13,4 @@ for section in config.sections():
  placeholder=os.path.join(path,"a.txt")
  with open(placeholder,"w",encoding="utf-8") as f:
   f.write(".")
- print(f"Created: {placeholder}")
+ print(f"created: {placeholder}")
