@@ -17,13 +17,13 @@ for section in config.sections():
  path=config.get(section,"path",fallback="").strip()
  url=config.get(section,"url",fallback="").strip()
  if not path:
-  fail(f"Submodule '{name}' has no path")
+  fail(f"submodule '{name}' has no path")
  if path in seen_paths:
-  fail(f"Duplicate submodule path detected: {path}")
+  fail(f"duplicate submodule path detected: {path}")
  seen_paths.add(path)
  if not url:
-  fail(f"Submodule '{name}' has no URL")
+  fail(f"submodule '{name}' has no URL")
  if not GIT_URL_PATTERN.match(url):
-  fail(f"Invalid Git URL in submodule '{name}': {url}")
- print(f"Validated: {name}")
-print("Validation passed.")
+  fail(f"invalid Git URL in submodule '{name}': {url}")
+ print(f"validated: {name}")
+print("validation passed.")
