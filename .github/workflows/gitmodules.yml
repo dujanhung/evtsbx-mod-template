@@ -16,7 +16,7 @@ jobs:
       cd .
    - name: create ZIP file
      run: |
-      zip -r -9 evtsbx-mod-template.zip -x ".git/*" -x ".github/*" -x ".gitmodules" -x "*.md"
+      zip -r -9 evtsbx-mod-template.zip . -x ".git/*" -x ".github/*" -x ".gitmodules" -x "*.md"
    - name: upload ZIP file
      uses: actions/upload-artifact@v4
      with:
