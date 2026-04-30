@@ -43,6 +43,7 @@ jobs:
       bash -n .github/scripts/*.sh
  validate-gitmodules:
   runs-on: ubuntu-latest
+  needs: validate-scripts
   steps:
    - name: checkout repo
      uses: actions/checkout@v4
