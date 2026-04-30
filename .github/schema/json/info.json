@@ -32,7 +32,7 @@
    },
    "connections":[
     {
-     "type":"signalReceiver,signalSender,signalReceiverSender",
+     "type required":"signalReceiver,signalSender,signalReceiverSender",
      "color":"hex",
      "connectionsLimit":"ui",
      "relativePosition":{
