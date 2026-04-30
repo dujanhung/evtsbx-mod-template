@@ -12,5 +12,5 @@ for section in config.sections():
  os.makedirs(path,exist_ok=True)
  placeholder=os.path.join(path,"a.txt")
  with open(placeholder,"w",encoding="utf-8") as f:
-  f.write("placeholder\n")
+  f.write(".")
  print(f"Created: {placeholder}")
