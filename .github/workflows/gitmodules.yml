@@ -95,12 +95,7 @@ jobs:
       mkdir -p ~/.ssh
       ssh-keyscan github.com >> ~/.ssh/known_hosts
       eval "$(ssh-agent -s)"
-      export SSH_ASKPASS=$(mktemp)
-      cat > "$SSH_ASKPASS" <<EOF
-      echo "$SSH_PASSPHRASE"
-      EOF
-      chmod +x "$SSH_ASKPASS"
-      DISPLAY=:0 SSH_ASKPASS="$SSH_ASKPASS" setsid ssh-add $SSH_PRIVATE_KEY
+      DISPLAY=:0 SSH_ASKPASS=$SSH_PASSPHRASE setsid ssh-add $SSH_PRIVATE_KEY
    - name: commit
      run: |
       git config --local user.name "github-actions[bot]"
