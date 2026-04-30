@@ -5,17 +5,17 @@ import sys
 def fail(message):
  print(f"ERROR: {message}")
  sys.exit(1)
-gitmodules = ".gitmodules"
+gitmodules=".gitmodules"
 if not os.path.exists(gitmodules):
  fail(f"{gitmodules} not found")
-config = configparser.ConfigParser()
+config=configparser.ConfigParser()
 config.read(gitmodules)
-seen_paths = set()
-GIT_URL_PATTERN = re.compile(r"^(https://|ssh://|git://|git@)[^\s]+$")
+seen_paths=set()
+GIT_URL_PATTERN=re.compile(r"^(https://|ssh://|git://|git@)[^\s]+$")
 for section in config.sections():
- name = section.replace('submodule "', "").replace('"', "")
- path = config.get(section, "path", fallback="").strip()
- url = config.get(section, "url", fallback="").strip()
+ name=section.replace('submodule "',"").replace('"',"")
+ path=config.get(section,"path",fallback="").strip()
+ url=config.get(section,"url",fallback="").strip()
  if not path:
   fail(f"Submodule '{name}' has no path")
  if path in seen_paths:
