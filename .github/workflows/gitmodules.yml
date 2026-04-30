@@ -16,8 +16,6 @@ jobs:
        ".gitmodules"
        ".github/scripts/validate_gitmodules.py"
        ".github/scripts/prepare_folders.py"
-       ".github/scripts/clone_submodules.sh"
-       ".github/scripts/enter_SSH_passphrase.sh"
       )
       for file in "${REQUIRED_FILES[@]}"; do
        if [ ! -f "$file" ]; then
