@@ -15,7 +15,7 @@ jobs:
       git submodule add https://github.com/dujanhung/evtsbx-mod-lua-preset
    - name: create ZIP file
      run: |
-      zip -r -9 evtsbx-mod-template.zip -x ".git/*" -x ".github/*"
+      zip -r -9 evtsbx-mod-template.zip -x ".git/*" -x ".github/*" -x ".gitmodules"
    - name: upload ZIP file
      uses: actions/upload-artifact@v4
      with:
