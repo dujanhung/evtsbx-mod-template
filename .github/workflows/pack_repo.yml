@@ -1,6 +1,8 @@
 name: pack repo
 on:
  workflow_dispatch:
+env:
+ FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
  pack-zip:
   runs-on: ubuntu-latest
