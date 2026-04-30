@@ -1,8 +1,8 @@
-name: gitmodules pipeline
+name: pack repo to ZIP file
 on:
  workflow_dispatch:
 jobs:
- clone:
+ pack:
   runs-on: ubuntu-latest
   steps:
    - name: get checkout
