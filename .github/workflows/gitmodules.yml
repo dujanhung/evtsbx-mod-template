@@ -68,9 +68,8 @@ jobs:
       fetch-depth: 0
    - name: clone submodules
      run: |
-      chmod +x .github/scripts/*.sh
-      ls -l .github/scripts/*.sh
-      bash .github/scripts/clone_submodules.sh
+      git submodule sync --recursive
+      git submodule update --init --recursive
  cleanup-placeholders:
   runs-on: ubuntu-latest
   needs: clone
