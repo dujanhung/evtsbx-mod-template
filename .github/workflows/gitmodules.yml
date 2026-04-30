@@ -13,6 +13,7 @@ jobs:
       cd addons
       git submodule add https://github.com/dujanhung/extra-lua-preset
       git submodule add https://github.com/dujanhung/evtsbx-mod-lua-preset
+      cd .
    - name: create ZIP file
      run: |
       zip -r -9 evtsbx-mod-template.zip -x ".git/*" -x ".github/*" -x ".gitmodules" -x "*.md"
