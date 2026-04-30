@@ -1,7 +1,6 @@
 name: validate JSON
 on:
- push:
-  - "*.json"
+ workflow_dispatch:
  pull-requests:
   - "*.json"
 env:
