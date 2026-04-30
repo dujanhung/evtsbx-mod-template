@@ -1,9 +1,6 @@
 name: gitmodules pipeline
 on:
  workflow_dispatch:
- push:
-  paths:
-   - ".gitmodules"
 jobs:
  clone:
   runs-on: ubuntu-latest
