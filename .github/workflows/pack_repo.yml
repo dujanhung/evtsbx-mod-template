@@ -1,0 +1,24 @@
+name: pack repo
+on:
+ workflow_dispatch:
+jobs:
+ pack-zip:
+  runs-on: ubuntu-latest
+  steps:
+   - name: get checkout
+     uses: actions/checkout@v4
+   - name: add submodules
+     run: |
+      mkdir addons
+      cd addons
+      git submodule add https://github.com/dujanhung/extra-lua-preset
+      git submodule add https://github.com/dujanhung/evtsbx-mod-lua-preset
+      cd .
+   - name: create ZIP file
+     run: |
+      zip -r -9 evtsbx-mod-template.zip . -x ".github/*" -x "*/.github/*" -x ".git/*" -x "*/.git" -x ".gitmodules" -x "*/.gitmodules" -x "*.md"
+   - name: upload ZIP file
+     uses: actions/upload-artifact@v4
+     with:
+      name: evtsbx-mod-template
+      path: evtsbx-mod-template.zip
