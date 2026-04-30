@@ -12,6 +12,7 @@ jobs:
    - name: clone submodules
      run: |
       mkdir addons
+      cd addons
       git submodule add https://github.com/dujanhung/extra-lua-preset addons/extra-lua-preset
       git submodule add https://github.com/dujanhung/evtsbx-mod-lua-preset addons/extra-lua-preset
       git submodule init
