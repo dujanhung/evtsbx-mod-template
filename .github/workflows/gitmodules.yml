@@ -7,7 +7,7 @@ jobs:
   steps:
    - name: get checkout
      uses: actions/checkout@v4
-   - name: clone submodules
+   - name: add submodules
      run: |
       mkdir addons
       cd addons
