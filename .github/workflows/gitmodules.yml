@@ -94,8 +94,6 @@ jobs:
      run: |
       mkdir -p ~/.ssh
       chmod 700 ~/.ssh
-      echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-      chmod 600 ~/.ssh/id_rsa
       ssh-keyscan github.com >> ~/.ssh/known_hosts
       eval "$(ssh-agent -s)"
       export SSH_ASKPASS=$(mktemp)
@@ -104,7 +102,7 @@ jobs:
       echo "$SSH_PASSPHRASE"
       EOF
       chmod +x "$SSH_ASKPASS"
-      DISPLAY=:0 SSH_ASKPASS="$SSH_ASKPASS" setsid ssh-add ~/.ssh/id_rsa < /dev/null
+      DISPLAY=:0 SSH_ASKPASS="$SSH_ASKPASS" setsid ssh-add $SSH_PRIVATE_KEY
       rm -f "$SSH_ASKPASS"
    - name: commit
      run: |
