@@ -4,9 +4,6 @@ on:
  push:
   paths:
    - ".gitmodules"
- pull_request:
-  paths:
-   - ".gitmodules"
 jobs:
  check-files:
   runs-on: ubuntu-latest
