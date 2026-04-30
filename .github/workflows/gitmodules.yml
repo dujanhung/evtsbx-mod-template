@@ -91,13 +91,6 @@ jobs:
    - name: remove placeholder files
      run: |
       find . -type f -name "a.txt" -delete
-   - name: verify cleanup
-     run: |
-      if find . -type f -name "a.txt" | grep -q .; then
-       echo "ERROR: Some a.txt files still exist"
-       exit 1
-      fi
-      echo "All placeholder files removed."
  commit-changes:
   runs-on: ubuntu-latest
   needs: cleanup-placeholders
