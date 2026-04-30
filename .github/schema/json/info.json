@@ -18,7 +18,7 @@
    "collider|enum.s":"wheel,sizable_wheel",
    "normScale":"uf",
    "smoothness":"lf",
-   "scale":"f",
+   "scale":"uf",
    "colliderOptions|need.collider=sizable_wheel":{
     "SizeX":"f",
     "SizeY":"f",
