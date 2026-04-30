@@ -81,7 +81,7 @@ jobs:
      with:
       fetch-depth: 0
    - name: clone submodules
-     run: ./.github/scripts/clone_submodules.sh
+     run: .github/scripts/clone_submodules.sh
  cleanup-placeholders:
   runs-on: ubuntu-latest
   needs: clone
