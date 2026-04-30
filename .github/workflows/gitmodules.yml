@@ -128,5 +128,5 @@ jobs:
        echo "No changes to commit."
        exit 0
       fi
-      git commit -m "chore: sync submodules"
+      git commit -m "sync submodules"
       git push
