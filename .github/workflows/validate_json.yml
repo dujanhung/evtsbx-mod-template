@@ -9,7 +9,7 @@ jobs:
   steps:
    - name: get checkout
      uses: actions/checkout@v5
-   - name: validate JSON
+   - name: validate
      run: |
       for file in *.json; do
        if jq empty "$file" >/dev/null 2>&1; then
