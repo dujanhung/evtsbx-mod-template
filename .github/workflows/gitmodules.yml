@@ -1,4 +1,4 @@
-name: pack repo to ZIP file
+name: pack repo as ZIP file
 on:
  workflow_dispatch:
 jobs:
