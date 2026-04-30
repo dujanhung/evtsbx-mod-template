@@ -98,7 +98,6 @@ jobs:
       eval "$(ssh-agent -s)"
       export SSH_ASKPASS=$(mktemp)
       cat > "$SSH_ASKPASS" <<EOF
-      #!/usr/bin/env bash
       echo "$SSH_PASSPHRASE"
       EOF
       chmod +x "$SSH_ASKPASS"
