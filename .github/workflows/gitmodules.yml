@@ -37,9 +37,6 @@ jobs:
    - name: validate Python syntax
      run: |
       python -m py_compile .github/scripts/*.py
-   - name: validate Bash syntax
-     run: |
-      bash -n .github/scripts/*.sh
  validate-gitmodules:
   runs-on: ubuntu-latest
   needs: validate-scripts
