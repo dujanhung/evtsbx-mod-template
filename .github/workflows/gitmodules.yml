@@ -99,3 +99,42 @@ jobs:
        exit 1
       fi
       echo "All placeholder files removed."
+ commit-changes:
+  runs-on: ubuntu-latest
+  needs: cleanup-placeholders
+  if: github.event_name != 'pull_request'
+  env:
+   SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+   SSH_PASSPHRASE: ${{ secrets.SSH_PASSPHRASE }}
+  steps:
+   - name: checkout repo
+     uses: actions/checkout@v4
+     with:
+      fetch-depth: 0
+   - name: setup ssh
+     run: |
+      mkdir -p ~/.ssh
+      chmod 700 ~/.ssh
+      echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+      chmod 600 ~/.ssh/id_rsa
+      ssh-keyscan github.com >> ~/.ssh/known_hosts
+      eval "$(ssh-agent -s)"
+      export SSH_ASKPASS=$(mktemp)
+      cat > "$SSH_ASKPASS" <<EOF
+      #!/usr/bin/env bash
+      echo "$SSH_PASSPHRASE"
+      EOF
+      chmod +x "$SSH_ASKPASS"
+      DISPLAY=:0 SSH_ASKPASS="$SSH_ASKPASS" setsid ssh-add ~/.ssh/id_rsa < /dev/null
+      rm -f "$SSH_ASKPASS"
+   - name: commit changes
+     run: |
+      git config --local user.name "github-actions[bot]"
+      git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      git add .
+      if git diff --cached --quiet; then
+       echo "No changes to commit."
+       exit 0
+      fi
+      git commit -m "chore: sync submodules"
+      git push
