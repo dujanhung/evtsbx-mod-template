@@ -69,7 +69,7 @@ jobs:
      run: |
       chmod +x .github/scripts/*.sh
       ls -l .github/scripts/*.sh
-      .github/scripts/clone_submodules.sh
+      bash .github/scripts/clone_submodules.sh
  cleanup-placeholders:
   runs-on: ubuntu-latest
   needs: clone
