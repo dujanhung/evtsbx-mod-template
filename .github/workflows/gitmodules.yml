@@ -16,7 +16,7 @@ jobs:
       git submodule sync --recursive
    - name: commit
      run: |
-      git config --global user.name "github-actions[bot]"
-      git config --global user.email "github-actions@github.com"
+      git config --global user.name "dujanhung"
+      git config --global user.email "chanhung2008.duong@gmail.com"
       git commit -m "sync submodules"
       git push
