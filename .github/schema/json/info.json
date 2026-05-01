@@ -9,7 +9,7 @@
    "uuid|required,unique":"string",
    "name":"string",
    "description":"string",
-   "icon|required, external_file(png)":"string",
+   "icon|required,external_file(png)":"string",
    "dif|external_file(png)":"string",
    "nor|external_file(png)":"string",
    "met|external_file(png)":"string",
