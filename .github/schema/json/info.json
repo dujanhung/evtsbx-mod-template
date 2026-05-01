@@ -16,9 +16,9 @@
    "mesh|required,external_file(obj)":"string",
    "script|external_file(lua)":"string",
    "collider|enum(wheel,sizable_wheel)":"string",
-   "normScale":"exp_float",
-   "smoothness":"linear_float",
-   "scale":"exp_float",
+   "normScale|range(exp)":"float",
+   "smoothness|range(linear)":"float",
+   "scale|range(exp)":"float",
    "colliderOptions|need(collider=sizable_wheel)":{
     "SizeX":"float",
     "SizeY":"float",
@@ -34,7 +34,7 @@
     {
      "type|required,enum(signalReceiver,signalSender,signalReceiverSender)":"string",
      "color|hex(tag,rgb)":"string",
-     "connectionsLimit":"unsigned_int",
+     "connectionsLimit|range(unsigned)":"int",
      "relativePosition":{
       "X":"float",
       "Y":"float",
