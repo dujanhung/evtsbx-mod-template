@@ -4,7 +4,7 @@
  "author":"s",
  "version":"s",
  "preview|required,file":"png",
- "simpleblocks|allow.multiple":[
+ "simpleblocks|allow(multiple)":[
   {
    "uuid|required,unique":"s",
    "name":"s",
@@ -15,7 +15,7 @@
    "met|file":"png",
    "mesh|required,file":"obj",
    "script|file":"lua",
-   "collider|enum.s":"wheel,sizable_wheel",
+   "collider|enum(s)":"wheel,sizable_wheel",
    "normScale":"uf",
    "smoothness":"l",
    "scale":"uf",
@@ -32,7 +32,7 @@
    },
    "connections|allow.multiple":[
     {
-     "type|required,enum.s":"signalReceiver,signalSender,signalReceiverSender",
+     "type|required,enum(s)":"signalReceiver,signalSender,signalReceiverSender",
      "color":"hex_rgb",
      "connectionsLimit":"ui",
      "relativePosition":{
