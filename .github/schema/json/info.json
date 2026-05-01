@@ -19,7 +19,7 @@
    "normScale|range_flag(exp)":"float",
    "smoothness|range_flag(linear)":"float",
    "scale|range_flag(exp)":"float",
-   "colliderOptions|need(collider==sizable_wheel)":{
+   "colliderOptions|need(collider==collider.enum.sizable_wheel":{
     "SizeX|range_flag(exp)":"float",
     "SizeY|range_flag(exp)":"float",
     "SizeZ|range_flag(exp)":"float",
@@ -27,7 +27,7 @@
     "OffsetY":"float",
     "OffsetZ":"float"
    },
-   "meshOptions|need(collider==sizable_wheel)":{
+   "meshOptions|need(collider==collider.enum.sizable_wheel)":{
     "OffsetY":"float"
    },
    "connections|array_flag(allow_multiple)":[
