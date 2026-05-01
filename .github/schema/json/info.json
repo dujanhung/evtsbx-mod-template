@@ -32,7 +32,7 @@
    },
    "connections|array_flag(allow_multiple)":[
     {
-     "type|required,enum(signalReceiver,signalSender,signalReceiverSender)":"string",
+     "type|@required,enum(signalReceiver,signalSender,signalReceiverSender)":"string",
      "color|hex(tag,rgb)":"string",
      "connectionsLimit|range_flag(unsigned)":"int",
      "relativePosition":{
