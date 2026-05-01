@@ -33,7 +33,7 @@
    "connections|allow.multiple":[
     {
      "type|required,enum(s)":"signalReceiver,signalSender,signalReceiverSender",
-     "color":"hex_rgb",
+     "color":"hex_tag_rgb",
      "connectionsLimit":"ui",
      "relativePosition":{
       "X":"f",
