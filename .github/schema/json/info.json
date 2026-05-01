@@ -16,9 +16,9 @@
    "mesh|required,file(obj)":"string",
    "script|file(lua)":"string",
    "collider|enum(wheel,sizable_wheel)":"string",
-   "normScale":"unsigned_float",
+   "normScale":"exp_float",
    "smoothness":"linear_float",
-   "scale":"unsigned_float",
+   "scale":"exp_float",
    "colliderOptions|need(collider=sizable_wheel)":{
     "SizeX":"float",
     "SizeY":"float",
