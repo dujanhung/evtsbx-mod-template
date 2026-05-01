@@ -17,7 +17,7 @@
    "script|file":"lua",
    "collider|enum.s":"wheel,sizable_wheel",
    "normScale":"uf",
-   "smoothness":"lf",
+   "smoothness":"l",
    "scale":"uf",
    "colliderOptions|need.collider=sizable_wheel":{
     "SizeX":"f",
