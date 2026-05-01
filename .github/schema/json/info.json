@@ -20,9 +20,9 @@
    "smoothness|range_flag(linear)":"float",
    "scale|range_flag(exp)":"float",
    "colliderOptions|need(collider==sizable_wheel)":{
-    "SizeX":"float",
-    "SizeY":"float",
-    "SizeZ":"float",
+    "SizeX|range_flag(exp)":"float",
+    "SizeY|range_flag(exp)":"float",
+    "SizeZ|range_flag(exp)":"float",
     "OffsetX":"float",
     "OffsetY":"float",
     "OffsetZ":"float"
