@@ -1,44 +1,44 @@
 {
- "name":"s",
- "description":"s",
- "author":"s",
- "version":"s",
- "preview|required,file":"png",
+ "name":"string",
+ "description":"string",
+ "author":"string",
+ "version":"string",
+ "preview|required,file(png)":"string",
  "simpleblocks|allow(multiple)":[
   {
-   "uuid|required,unique":"s",
-   "name":"s",
-   "description":"s",
-   "icon|required,file":"png",
-   "dif|file":"png",
-   "nor|file":"png",
-   "met|file":"png",
-   "mesh|required,file":"obj",
-   "script|file":"lua",
-   "collider|enum(s)":"wheel,sizable_wheel",
-   "normScale":"uf",
-   "smoothness":"l",
-   "scale":"uf",
+   "uuid|required,unique":"string",
+   "name":"string",
+   "description":"string",
+   "icon|required,file(png)":"string",
+   "dif|file(png)":"string",
+   "nor|file(png)":"string",
+   "met|file(png)":"string",
+   "mesh|required,file(obj)":"string",
+   "script|file(lua)":"string",
+   "collider|enum(wheel,sizable_wheel)":"string",
+   "normScale":"unsigned_float",
+   "smoothness":"linear_float",
+   "scale":"unsigned_float",
    "colliderOptions|need(collider=sizable_wheel)":{
-    "SizeX":"f",
-    "SizeY":"f",
-    "SizeZ":"f",
-    "OffsetX":"f",
-    "OffsetY":"f",
-    "OffsetZ":"f"
+    "SizeX":"float",
+    "SizeY":"float",
+    "SizeZ":"float",
+    "OffsetX":"float",
+    "OffsetY":"float",
+    "OffsetZ":"float"
    },
    "meshOptions|need(collider=sizable_wheel)":{
-    "OffsetY":"f"
+    "OffsetY":"float"
    },
-   "connections|allow.multiple":[
+   "connections|allow(multiple)":[
     {
-     "type|required,enum(s)":"signalReceiver,signalSender,signalReceiverSender",
-     "color":"hex_tag_rgb",
-     "connectionsLimit":"ui",
+     "type|required,enum(signalReceiver,signalSender,signalReceiverSender)":"string",
+     "color|hex(tag,rgb)":"string",
+     "connectionsLimit":"unsigned_int",
      "relativePosition":{
-      "X":"f",
-      "Y":"f",
-      "Z":"f"
+      "X":"float",
+      "Y":"float",
+      "Z":"float"
      }
     }
    ]
