@@ -19,7 +19,7 @@
    "normScale":"uf",
    "smoothness":"l",
    "scale":"uf",
-   "colliderOptions|need.collider=sizable_wheel":{
+   "colliderOptions|need(collider=sizable_wheel)":{
     "SizeX":"f",
     "SizeY":"f",
     "SizeZ":"f",
@@ -27,7 +27,7 @@
     "OffsetY":"f",
     "OffsetZ":"f"
    },
-   "meshOptions|need.collider=sizable_wheel":{
+   "meshOptions|need(collider=sizable_wheel)":{
     "OffsetY":"f"
    },
    "connections|allow.multiple":[
