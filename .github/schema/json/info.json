@@ -13,7 +13,7 @@
    "dif|external_file(png)":"string",
    "nor|external_file(png)":"string",
    "met|external_file(png)":"string",
-   "mesh|required, external_file(obj)":"string",
+   "mesh|required,external_file(obj)":"string",
    "script|external_file(lua)":"string",
    "collider|enum(wheel,sizable_wheel)":"string",
    "normScale":"exp_float",
