@@ -4,7 +4,7 @@
  "author":"string",
  "version":"string",
  "preview|required,external_file(png)":"string",
- "simpleblocks|array(allow_multiple)":[
+ "simpleblocks|array_flag(allow_multiple)":[
   {
    "uuid|required,unique":"string",
    "name":"string",
@@ -30,7 +30,7 @@
    "meshOptions|need(collider==sizable_wheel)":{
     "OffsetY":"float"
    },
-   "connections|array(allow_multiple)":[
+   "connections|array_flag(allow_multiple)":[
     {
      "type|required,enum(signalReceiver,signalSender,signalReceiverSender)":"string",
      "color|hex(tag,rgb)":"string",
