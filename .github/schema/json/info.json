@@ -33,7 +33,7 @@
    "connections|array_flag(allow_multiple)":[
     {
      "type|@required,enum(signalReceiver,signalSender,signalReceiverSender)":"string",
-     "color|hex(tag,rgb)":"string",
+     "color|hex_flag(tag,rgb)":"string",
      "connectionsLimit|range_flag(unsigned)":"int",
      "relativePosition":{
       "X":"float",
