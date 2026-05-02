@@ -3,7 +3,6 @@ on:
  workflow_dispatch:
 env:
  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
- FOLDER_NAME: evtsbx-mod-template
 jobs:
  pack-repo:
   runs-on: ubuntu-latest
@@ -28,16 +27,16 @@ jobs:
    - name: move
      run: |
       cd .
-      mkdir "$FOLDER_NAME"
-      cd "$FOLDER_NAME"
-      find . -mindepth 1 -maxdepth 1 ! -name "./$FOLDER_NAME/" -exec mv -- {} "./$FOLDER_NAME/" \;
+      mkdir evtsbx-mod-template
+      cd evtsbx-mod-template
+      find . -mindepth 1 -maxdepth 1 ! -name "./evtsbx-mod-template/" -exec mv -- {} "./evtsbx-mod-template/" \;
       cd .
    - name: list
      run: |
       echo "."
       ls -m .
-      echo $FOLDER_NAME
-      ls -m "./$FOLDER_NAME/"
+      echo "evtsbx-mod-template"
+      ls -m "./evtsbx-mod-template/"
    - name: upload artifact
      uses: actions/upload-artifact@v6
      with:
