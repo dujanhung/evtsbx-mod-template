@@ -17,4 +17,4 @@ jobs:
    - name: setup Luacheck
      uses: leafo/gh-actions-luacheck@v11
    - name: syntax check
-     run: luacheck .
+     run: luacheck *.lua
