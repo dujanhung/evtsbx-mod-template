@@ -6,46 +6,46 @@ provides automation for validation, exporting, and repository maintenance.
 
 ---
 
-## features
+# features
 
-### file validation
+## file validation
 
 automatically validates project files through GHA triggers.
 
-#### JSON
+### JSON
 
 - syntax check
 - schema check
 
-#### Lua
+### Lua
 
 - syntax check
 
 ---
 
-### export support
+## export support
 
 supports automated exports through GHA triggers.
 
-#### submodule download
+### submodule download
 
 - stores submodule links in `env`
 - downloads submodules using `git submodule add`
 
-#### ZIP cleanup
+### ZIP cleanup
 
 - removes unnecessary files and folders (e.g. `*/.git/`, `*/.github/`, `*.md`, etc.)
 - moves all exported files into a dedicated folder to avoid file pollution after ZIP extraction
 
 ---
 
-### fully functional template
+## fully functional template
 
 includes preconfigured files that work in **Evertech Sandbox** out of the box.
 
 ---
 
-## credits
+# credits
 
 <table>
  <tr>
