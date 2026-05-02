@@ -101,7 +101,7 @@ ___
    </a>
   </td>
   <td>
-   provides reusable additional Lua utilities
+   provides reusable Lua utilities
   </td>
  </tr>
  <tr>
