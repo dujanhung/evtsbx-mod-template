@@ -9,7 +9,7 @@
    "uuid":"mod_uuid",
    "name":"new MOD block",
    "description":"sample text",
-   "icon":"simpleblocks/new_uuid/icon.png",
+   "icon":"simpleblocks/mod_uuid/icon.png",
    "dif":"simpleblocks/mod_uuid/dif.png",
    "nor":"simpleblocks/mod_uuid/nor.png",
    "met":"simpleblocks/mod_uuid/met.png",
