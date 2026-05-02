@@ -30,7 +30,7 @@ ___
 
 exports this repo via GHA triggers.
 
-### submodules support
+### download submodules
 
 - stores links in `env`
 - uses `git submodule add`
