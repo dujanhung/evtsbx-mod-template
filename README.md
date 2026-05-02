@@ -81,7 +81,7 @@ ___
    </a>
   </td>
   <td>
-   official API reference and game scripting documentation
+   official documentation
   </td>
  </tr>
  <tr>
