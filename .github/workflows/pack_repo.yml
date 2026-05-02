@@ -32,7 +32,7 @@ jobs:
       cd $FOLDER_NAME
       shopt -s dotglob nullglob
       for item in *; do
-       if $item==$FOLDER_NAME; then
+       if $item==$FOLDER_NAME;then
         continue
        fi
        mv -- $item $FOLDER_NAME
