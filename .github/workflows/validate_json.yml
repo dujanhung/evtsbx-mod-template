@@ -26,5 +26,10 @@ jobs:
      with:
       repository: dujanhung/json-validator
       path: json-validator
-   - name: Copy file
-     run: cp json-validator/script.py .
+   - name: setup Python
+     uses: actions/setup-python@v5
+     with:
+      python-version: '3.14'
+   - name: schema check
+     run: |
+      python json-validator/script.py .github/schema/info.json info.json
