@@ -27,7 +27,7 @@ jobs:
    - name: create root folder
      run: |
       mkdir $FOLDER_NAME
-   - name: move everything to root folder
+   - name: move
      run: |
       find . -type d -name "./*" ! -path "./$FOLDER_NAME" -exec movedir {} $FOLDER_NAME \;
       find . -type f -name "./*" -exec move {} $FOLDER_NAME \;
