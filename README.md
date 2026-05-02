@@ -11,7 +11,7 @@ provides many tools for maintenance and export.
 
 ___
 
-## file validation
+## files validation
 
 validate files via GHA triggers.
 
