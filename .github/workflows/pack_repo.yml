@@ -18,11 +18,11 @@ jobs:
       cd .
    - name: sanitize
      run: |
-      find . -type f -name "*.md" -exec rm {} \;
-      find . -type f -name ".gitmodules" -exec rm {} \;
-      find . -type f -name "*.git" -exec rm {} \;
-      find . -type dir -name ".github/*" -exec rmdir {} \;
-      find . -type dir -name "*/.github/*" -exec rmdir {} \;
+      find . -type f , -name "*.md" -exec rm {} \;
+      find . -type f , -name ".gitmodules" -exec rm {} \;
+      find . -type f , -name "*.git" -exec rm {} \;
+      find . -type dir , -name ".github/*" -exec rmdir {} \;
+      find . -type dir , -name "*/.github/*" -exec rmdir {} \;
       rmdir .git/*
       ls -m .
    - name: upload artifact
