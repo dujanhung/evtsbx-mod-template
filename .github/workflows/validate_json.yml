@@ -15,7 +15,7 @@ jobs:
       echo "open $file"
       jq empty "$file"
       echo "validated $file"
-   - name: checkout external repo
+   - name: checkout json-validator repo
      uses: actions/checkout@v4
      with:
       repository: dujanhung/json-validator
