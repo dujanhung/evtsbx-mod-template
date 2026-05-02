@@ -28,8 +28,8 @@ jobs:
    - name: move
      run: |
       cd .
-      mkdir $FOLDER_NAME
-      cd $FOLDER_NAME
+      mkdir "$FOLDER_NAME"
+      cd "$FOLDER_NAME"
       find . -mindepth 1 -maxdepth 1 ! -name "./$FOLDER_NAME" -exec mv -- {} "./$FOLDER_NAME" \;
       cd .
    - name: upload artifact
