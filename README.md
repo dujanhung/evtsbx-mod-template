@@ -33,7 +33,7 @@ packs this repo as ZIP files with submodules via GHA triggers.
 ### clean ZIP file
 
 - no rubbishes (eg. `*/.git/` , `*/.github/` , `*.md` , etc)
-- no pollutants bomb after extract.
+- no unwanted pollutants bomb after extract.
 
 ___
 ___
