@@ -32,6 +32,12 @@ jobs:
       cd "$FOLDER_NAME"
       find . -mindepth 1 -maxdepth 1 ! -name "./$FOLDER_NAME" -exec mv -- {} "./$FOLDER_NAME" \;
       cd .
+   - name: list
+     run: |
+      echo "."
+      ls -m .
+      echo $FOLDER_NAME
+      ls -m $FOLDER_NAME
    - name: upload artifact
      uses: actions/upload-artifact@v6
      with:
