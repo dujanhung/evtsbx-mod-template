@@ -26,7 +26,6 @@ jobs:
    - name: create root folder
      run: |
       mkdir evtsbx-mod-template
-      cd evtsbx-mod-template
    - name: move everything to root folder
      run: |
       find . -type d -name "./*" ! -path "./evtsbx-mod-template" -exec movedir {} evtsbx-mod-template \;
