@@ -15,3 +15,10 @@ jobs:
       echo "open $file"
       jq empty "$file"
       echo "validated $file"
+   - name: Checkout external repo
+     uses: actions/checkout@v4
+     with:
+      repository: dujanhung/json-validator
+      path: json-validator
+   - name: Copy file
+     run: cp json-validator/script.py .
