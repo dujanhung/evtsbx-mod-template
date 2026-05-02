@@ -32,10 +32,10 @@ jobs:
       cd $FOLDER_NAME
       shopt -s dotglob nullglob
       for item in *; do
-       if "$item"=="$target"; then
+       if $item==$FOLDER_NAME; then
         continue
        fi
-       mv -- "$item" "$target"
+       mv -- $item $FOLDER_NAME
       cd .
    - name: upload artifact
      uses: actions/upload-artifact@v6
