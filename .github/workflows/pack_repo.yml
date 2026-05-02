@@ -37,7 +37,7 @@ jobs:
       echo "."
       ls -m .
       echo $FOLDER_NAME
-      ls -m $FOLDER_NAME
+      ls -m "./$FOLDER_NAME/"
    - name: upload artifact
      uses: actions/upload-artifact@v6
      with:
