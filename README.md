@@ -33,6 +33,6 @@ packs this repo as ZIP files with submodules via GHA triggers.
 ___
 ___
 
-### credits
+# credits
 
 - [json-schema-validator](https://github.com/dujanhung/json-schema-validator)
