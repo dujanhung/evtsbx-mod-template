@@ -16,7 +16,7 @@ jobs:
       git submodule add https://github.com/dujanhung/extra-lua-preset
       git submodule add https://github.com/dujanhung/evtsbx-mod-lua-preset
       cd .
-   - name: cleanup
+   - name: sanitize
      run: |
       rm .github/* */.github/* .git/* */.git .gitmodules */.gitmodules *.md
    - name: upload artifact
