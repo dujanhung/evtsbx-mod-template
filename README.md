@@ -32,7 +32,7 @@ supports automated exports through GHA triggers.
 
 ### ZIP cleanup
 
-- removes unnecessary files and folders (e.g. `*/.git/`, `*/.github/`, `*.md`, etc.)
+- removes unnecessary files and folders (eg. `*/.git/`, `*/.github/`, `*.md`, etc.)
 - moves all exported files into a dedicated folder to avoid file pollution after ZIP extraction
 
 ## fully functional template
