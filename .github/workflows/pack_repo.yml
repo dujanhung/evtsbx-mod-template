@@ -31,7 +31,9 @@ jobs:
       mkdir $FOLDER_NAME
       cd $FOLDER_NAME
       for i in ./* ; do
-       [[ $i == $FOLDER_NAME ]] && continue
+       if [ $i == $FOLDER_NAME ]
+        continue
+       fi
        mv $i $FOLDER_NAME/
       cd .
    - name: upload artifact
