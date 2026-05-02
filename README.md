@@ -7,7 +7,7 @@ ___
 
 # features
 
-many utilities for maintenance.
+provides many utilities for maintenance.
 
 ___
 
