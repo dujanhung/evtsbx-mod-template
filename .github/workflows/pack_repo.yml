@@ -39,6 +39,8 @@ jobs:
       ls -m .
       echo "🟢"
       ls -m ./$FOLDER_NAME
+      echo "🐱"
+      cat ./$FOLDER_NAME
    - name: upload artifact
      uses: actions/upload-artifact@v6
      with:
