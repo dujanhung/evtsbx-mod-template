@@ -41,6 +41,12 @@ includes preconfigured files that work in **Evertech Sandbox** out of the box.
 
 ___
 
+# usage
+
+- folk this repo.
+
+___
+
 # credits
 
 <table>
