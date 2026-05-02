@@ -1,5 +1,5 @@
-<h2>
-"Evertech Sandbox" MOD template
-</h2>
+# "Evertech Sandbox" MOD template
 
-ready-made MOD template for "Evertech Sandbox"
+ready-made MOD template for "Evertech Sandbox" in GitHub.
+
+# features
