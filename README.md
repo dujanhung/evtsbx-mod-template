@@ -13,7 +13,7 @@ ___
 
 ## file validation
 
-validate JSON and Lua files via GHA triggers.
+validate files via GHA triggers.
 
 ### JSON
 
