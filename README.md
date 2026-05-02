@@ -7,7 +7,7 @@ ___
 
 # features
 
-provides many utilities for maintenance.
+provides many tools for maintenance and export.
 
 ___
 
