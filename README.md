@@ -7,8 +7,8 @@ ___
 
 # features
 
-in short, this repo has many utility for validations.
+this repo has many utility for validations.
 
-## JSON validator
+## file validations
 
-validate JSON files in GHA.
+validate JSON and Lua files in GHA.
