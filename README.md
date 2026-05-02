@@ -45,7 +45,7 @@ ___
 
 ## open GitHub in web browser (eg. `Chrome`, `Edge`, `Opera`, etc.)
 
-## click "use this template" to copy this repo as yours.
+## click "use this template" to copy this repo as yours, without unwanted "folked" watermark.
 
 ## make changes to your repo
 
