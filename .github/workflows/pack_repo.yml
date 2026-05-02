@@ -29,6 +29,9 @@ jobs:
       mkdir $FOLDER_NAME
       find . -type d -name "./*" ! -path "./$FOLDER_NAME" -exec movedir {} $FOLDER_NAME \;
       find . -type f -name "./*" -exec move {} $FOLDER_NAME \;
+   - name: list
+     run: |
+      ls -m .
    - name: upload artifact
      uses: actions/upload-artifact@v6
      with:
