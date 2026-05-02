@@ -27,7 +27,7 @@ jobs:
    - name: move
      run: |
       mkdir $ROOT_FOLDER
-      find . -mindepth 1 -maxdepth 1 ! -name "./$ROOT_FOLDER" -exec mv -- {} "./$ROOT_FOLDER/" \;
+      find . -mindepth 1 -maxdepth 1 ! -name $ROOT_FOLDER -exec mv -- {} "./$ROOT_FOLDER/" \;
    - name: upload artifact
      uses: actions/upload-artifact@v6
      with:
