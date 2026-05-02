@@ -26,6 +26,6 @@ validate JSON and Lua files via GHA triggers.
 
 ___
 
-## pack repo
+## repo packer
 
 packs this repo as ZIP files with submodules via GHA triggers.
