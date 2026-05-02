@@ -51,6 +51,7 @@ ___
 
 # credits
 
+- [original Evertech Sandbox API doc](https://vitsum.com/evertech/docs/#/en-US)
 - [json-schema-validator](https://github.com/dujanhung/json-schema-validator)
 - [extra-lua-preset](https://github.com/dujanhung/extra-lua-preset)
 - [evtsbx-mod-lua-preset](https://github.com/dujanhung/evtsbx-mod-lua-preset)
