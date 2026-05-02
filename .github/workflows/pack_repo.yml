@@ -24,7 +24,7 @@ jobs:
       find . -type f -name ".git" -exec rm {} \;
       find . -type d -name "*/.github" -exec rmdir {} \;
       find . -type d -name "*/.git" -exec rmdir {} \;
-   - name: move to root folder
+   - name: move
      run: |
       mkdir $FOLDER_NAME
       find . -type d -name "./*" ! -path "./$FOLDER_NAME" -exec movedir {} $FOLDER_NAME \;
