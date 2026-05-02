@@ -38,6 +38,7 @@ jobs:
       ls -m .
       echo $FOLDER_NAME
       ls -m $FOLDER_NAME
+      done
    - name: upload artifact
      uses: actions/upload-artifact@v6
      with:
