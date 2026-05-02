@@ -28,7 +28,6 @@ jobs:
      run: |
       cd .
       mkdir evtsbx-mod-template
-      cd evtsbx-mod-template
       find . -mindepth 1 -maxdepth 1 ! -name "./evtsbx-mod-template/" -exec mv -- {} "./evtsbx-mod-template/" \;
       cd .
    - name: list
