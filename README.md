@@ -42,7 +42,7 @@ exports this repo via GHA triggers.
 
 ___
 
-## functional scripts
+## fully functional files
 
 follows JSON, Lua and "Evertech Sandbox" API syntax.
 
