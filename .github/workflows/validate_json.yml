@@ -7,9 +7,9 @@ jobs:
  validate-json:
   runs-on: ubuntu-latest
   steps:
-   - name: get checkout
+   - name: checkout repo
      uses: actions/checkout@v5
-   - name: validate
+   - name: syntax check
      run: |
       file="info.json"
       echo "open $file"
