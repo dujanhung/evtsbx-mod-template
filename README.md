@@ -44,8 +44,10 @@ ___
 # usage
 
 - open GitHub in web browser (eg. `Chrome`, `Edge`, `Opera`, etc.)
-- click "use this template" to copy this repo.
-- made 
+- click "use this template" to copy this repo as yours.
+- make changes to your repo.
+- validate files with GHA via "run" button or pull requests.
+- export repo with GHA via "run" button.
 
 ___
 
