@@ -33,7 +33,6 @@ packs this repo via GHA triggers.
 ### submodules support
 
 - store links in `env`
-- construct `addons` folder
 - use `git submodule add`
 
 ### clean ZIP file
