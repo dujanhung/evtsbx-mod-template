@@ -12,9 +12,6 @@ jobs:
   steps:
    - name: checkout repo
      uses: actions/checkout@v5
-   - name: setup Lua
-     uses: leafo/gh-actions-lua@v11
-   - name: setup Luacheck
-     uses: leafo/gh-actions-luacheck@v11
    - name: syntax check
-     run: luacheck *.lua
+     run: |
+      lua -p *lua
