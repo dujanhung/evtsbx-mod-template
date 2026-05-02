@@ -43,7 +43,7 @@ ___
 
 # usage
 
-- folk this repo.
+- click "use this template"
 
 ___
 
