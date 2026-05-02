@@ -3,7 +3,7 @@ on:
  workflow_dispatch:
  pull_request:
   paths:
-   - "**.json"
+   - "info.json"
 env:
  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
  JSON_SCHEMA: ".github/schema/info.json"
