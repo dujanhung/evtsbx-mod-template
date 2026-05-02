@@ -30,7 +30,7 @@ jobs:
       cd .
       mkdir $FOLDER_NAME
       cd $FOLDER_NAME
-      for i in * ; do
+      for i in ./* ; do
        [[ "$i" == "$FOLDER_NAME" ]] && continue
        mv "$i" "$FOLDER_NAME"
       cd .
