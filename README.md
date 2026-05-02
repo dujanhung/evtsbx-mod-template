@@ -1,4 +1,4 @@
-# Evertech Sandbox mod template
+# Evertech Sandbox MOD template
 
 a ready-to-use GitHub template for creating and maintaining mods for **Evertech Sandbox**.
 
@@ -111,7 +111,7 @@ ___
    </a>
   </td>
   <td>
-   provides Lua presets specifically designed for Evertech Sandbox mod development
+   provides Lua presets specifically designed for Evertech Sandbox MOD development
   </td>
  </tr>
 </table>
