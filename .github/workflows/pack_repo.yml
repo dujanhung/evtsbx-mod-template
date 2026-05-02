@@ -28,12 +28,6 @@ jobs:
      run: |
       mkdir $ROOT_FOLDER
       find . -mindepth 1 -maxdepth 1 ! -name "./$ROOT_FOLDER/" -exec mv -- {} "./$ROOT_FOLDER/" \;
-   - name: list
-     run: |
-      echo "."
-      ls -m .
-      echo $ROOT_FOLDER
-      ls -m "./$ROOT_FOLDER/"
    - name: upload artifact
      uses: actions/upload-artifact@v6
      with:
