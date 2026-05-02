@@ -1,0 +1,16 @@
+name: lua validation
+on:
+  paths:
+   - '**.lua'
+jobs:
+ validate:
+  runs-on: ubuntu-latest
+  steps:
+   - name: checkout repo
+     uses: actions/checkout@v4
+   - name: setup lua
+     uses: leafo/gh-actions-lua@v11
+   - name: setup luacheck
+     uses: leafo/gh-actions-luacheck@v11
+   - name: syntax check
+     run: luacheck .
