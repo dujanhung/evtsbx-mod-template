@@ -91,7 +91,7 @@ ___
    </a>
   </td>
   <td>
-   used for validating JSON files against predefined schemas during GHA checks
+   validate JSON files against predefined schemas during GHA checks
   </td>
  </tr>
  <tr>
