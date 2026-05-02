@@ -13,7 +13,7 @@ ___
 
 ## file validation
 
-validate JSON and Lua files in GHA.
+validate JSON and Lua files with GHA `workflow_dispatch` triggers.
 
 ### JSON
 
