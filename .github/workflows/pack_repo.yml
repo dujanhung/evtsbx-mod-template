@@ -30,7 +30,7 @@ jobs:
      run: |
       mkdir $ROOT_FOLDER
       find . -mindepth 1 -maxdepth 1 ! -name $ROOT_FOLDER -exec mv -- {} "./$ROOT_FOLDER/" \;
-   - name: upload artifact
+   - name: upload
      uses: actions/upload-artifact@v6
      with:
       name: evtsbx-mod-template
