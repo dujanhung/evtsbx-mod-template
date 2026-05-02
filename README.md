@@ -28,7 +28,7 @@ ___
 
 ## exports support
 
-packs this repo via GHA triggers.
+exports this repo via GHA triggers.
 
 ### submodules support
 
@@ -39,6 +39,12 @@ packs this repo via GHA triggers.
 
 - removes all rubbishes (eg. `*/.git/` , `*/.github/` , `*.md` , etc)
 - moves everything to a folder to prevent from unwanted pollutants bomb after extracting the ZIP file.
+
+___
+
+## functional scripts
+
+follows JSON, Lua and "Evertech Sandbox" API syntax.
 
 ___
 ___
