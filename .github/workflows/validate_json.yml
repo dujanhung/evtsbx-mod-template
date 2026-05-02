@@ -6,8 +6,8 @@ on:
    - "**.json"
 env:
  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
- JSON_SCHEMA: ".github/schema/info.json"
- JSON_TARGET: "info.json"
+ JSON_SCHEMA: .github/schema/info.json
+ JSON_TARGET: info.json
 jobs:
  validate-json:
   runs-on: ubuntu-latest
