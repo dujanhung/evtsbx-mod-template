@@ -34,7 +34,7 @@ jobs:
        if [ $i == $FOLDER_NAME ]
         continue
        fi
-       mv $i $FOLDER_NAME/
+       mv $i $FOLDER_NAME
       cd .
    - name: upload artifact
      uses: actions/upload-artifact@v6
