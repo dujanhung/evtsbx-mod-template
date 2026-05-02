@@ -7,7 +7,7 @@ ___
 
 # features
 
-this repo has many utility for validations.
+this repo has many utility for maintenance.
 
 ## file validations
 
