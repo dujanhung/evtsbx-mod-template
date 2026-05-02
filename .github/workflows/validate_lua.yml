@@ -4,12 +4,14 @@ on:
  pull_request:
   paths:
    - '**.lua'
+env:
+ FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
  validate:
   runs-on: ubuntu-latest
   steps:
    - name: checkout repo
-     uses: actions/checkout@v4
+     uses: actions/checkout@v5
    - name: setup lua
      uses: leafo/gh-actions-lua@v11
    - name: setup luacheck
