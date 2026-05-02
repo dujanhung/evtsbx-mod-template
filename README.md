@@ -44,7 +44,7 @@ ___
 
 ## fully functional files
 
-follows JSON, Lua and "Evertech Sandbox" API syntax.
+follows JSON, Lua and "Evertech Sandbox" Lua API syntax.
 
 ___
 ___
