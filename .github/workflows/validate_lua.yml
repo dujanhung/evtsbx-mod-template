@@ -14,4 +14,4 @@ jobs:
      uses: actions/checkout@v5
    - name: syntax check
      run: |
-      lua -p *lua
+      lua -p *.lua
