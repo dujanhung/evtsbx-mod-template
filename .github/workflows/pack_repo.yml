@@ -31,7 +31,7 @@ jobs:
       mkdir $FOLDER_NAME
       cd $FOLDER_NAME
       for i in ./* ; do
-       if [ "$i" == "$FOLDER_NAME" ]
+       if [ $i == $FOLDER_NAME ]
         continue
        fi
        mv $i $FOLDER_NAME/
