@@ -16,10 +16,10 @@ jobs:
      uses: actions/checkout@v5
    - name: schema syntax check
      run: |
-      jq empty "$JSON_SCHEMA"
+      jq empty $JSON_SCHEMA
    - name: target syntax check
      run: |
-      jq empty "$JSON_TARGET"
+      jq empty $JSON_TARGET
    - name: checkout json-schema-validator repo
      uses: actions/checkout@v5
      with:
@@ -31,4 +31,4 @@ jobs:
       python-version: '3.14'
    - name: schema check
      run: |
-      python json-schema-validator/script.py "$JSON_SCHEMA" "$JSON_TARGET"
+      python json-schema-validator/script.py $JSON_SCHEMA $JSON_TARGET
