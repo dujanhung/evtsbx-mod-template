@@ -20,8 +20,6 @@ validate files via GHA triggers.
 - syntax check
 - schema check
 
-thanks to (a)[json-schema-validator]
-
 ### Lua
 
 - syntax check
@@ -31,3 +29,10 @@ ___
 ## repo packer
 
 packs this repo as ZIP files with submodules via GHA triggers.
+
+___
+___
+
+### credits
+
+- [json-schema-validator repo](https://github.com/dujanhung/json-schema-validator)
