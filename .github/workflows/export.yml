@@ -1,0 +1,38 @@
+name: export
+on:
+ workflow_dispatch:
+env:
+ FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+ ROOT_FOLDER: evtsbx-mod-template
+ LINK_extra: https://github.com/dujanhung/extra-lua-preset
+ LINK_evtsbx_mod: https://github.com/dujanhung/evtsbx-mod-lua-preset
+jobs:
+ export:
+  runs-on: ubuntu-latest
+  steps:
+   - name: checkout repo
+     uses: actions/checkout@v5
+   - name: add submodules
+     run: |
+      mkdir addons
+      cd addons
+      git submodule add $LINK_extra
+      git submodule add $LINK_evtsbx_mod
+      cd .
+   - name: sanitize
+     run: |
+      find . -type f -name "*.md" -exec rm {} \;
+      find . -type f -name ".gitmodules" -exec rm {} \;
+      find . -type f -name ".git" -exec rm {} \;
+      find . -type d -name "*/.github" -exec rmdir {} \;
+      find . -type d -name "*/.git" -exec rmdir {} \;
+   - name: move
+     run: |
+      mkdir $ROOT_FOLDER
+      find . -mindepth 1 -maxdepth 1 ! -name $ROOT_FOLDER -exec mv -- {} "./$ROOT_FOLDER/" \;
+   - name: upload
+     uses: actions/upload-artifact@v6
+     with:
+      name: evtsbx-mod-template
+      path: .
+      compression-level: 9
