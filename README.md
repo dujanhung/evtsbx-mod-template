@@ -20,6 +20,8 @@ validate files via GHA triggers.
 - syntax check
 - schema check
 
+thanks to (a)[json-schema-validator]
+
 ### Lua
 
 - syntax check
