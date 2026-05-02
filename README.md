@@ -81,7 +81,7 @@ ___
    </a>
   </td>
   <td>
-   official documentation
+   official API documentation
   </td>
  </tr>
  <tr>
