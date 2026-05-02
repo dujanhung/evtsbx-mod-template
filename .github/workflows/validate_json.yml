@@ -15,6 +15,12 @@ jobs:
       echo "open $file"
       jq empty "$file"
       echo "validated $file"
+   - name: target syntax check
+     run: |
+      file="info.json"
+      echo "open $file"
+      jq empty "$file"
+      echo "validated $file"
    - name: checkout json-validator repo
      uses: actions/checkout@v4
      with:
