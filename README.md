@@ -17,12 +17,12 @@ validate JSON and Lua files via GHA triggers.
 
 ### JSON
 
-- basic check
+- syntax check
 - schema check
 
 ### Lua
 
-- basic check
+- syntax check
 
 ___
 
