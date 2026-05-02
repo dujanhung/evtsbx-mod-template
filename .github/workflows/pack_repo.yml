@@ -21,8 +21,8 @@ jobs:
       find . -type f -name "*.md" -exec rm {} \;
       find . -type f -name ".gitmodules" -exec rm {} \;
       find . -type f -name ".git" -exec rm {} \;
-      find . -type d -name ".github" -exec rmdir {} \;
-      find . -type d -name ".git" -exec rmdir {} \;
+      find . -type d -name "*/.github" -exec rmdir {} \;
+      find . -type d -name "*/.git" -exec rmdir {} \;
       ls -m .
    - name: upload artifact
      uses: actions/upload-artifact@v6
