@@ -23,6 +23,14 @@ jobs:
       find . -type f -name ".git" -exec rm {} \;
       find . -type d -name "*/.github" -exec rmdir {} \;
       find . -type d -name "*/.git" -exec rmdir {} \;
+   - name: create root folder
+     run: |
+      mkdir evtsbx-mod-template
+      cd evtsbx-mod-template
+   - name: move everything to root folder
+     run: |
+      find . -type d -name "./*" ! evtsbx-mod-template -exec move {} evtsbx-mod-template \;
+      move info.json evtsbx-mod-template
    - name: upload artifact
      uses: actions/upload-artifact@v6
      with:
