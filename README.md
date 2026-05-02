@@ -43,6 +43,7 @@ ___
 
 # usage
 
+- open GitHub in web browser (eg. `Chrome`, `Edge`, `Opera`, etc.)
 - click "use this template"
 
 ___
