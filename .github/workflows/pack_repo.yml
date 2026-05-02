@@ -32,10 +32,10 @@ jobs:
       cd $FOLDER_NAME
       shopt -s dotglob nullglob
       for i in . ; do
-       if [[ $i == $FOLDER_NAME ]] ; then
+       if [[ "$i" == "$FOLDER_NAME" ]] ; then
         continue
        fi
-       mv -- $i $FOLDER_NAME
+       mv -- "$i" "$FOLDER_NAME"
       cd .
    - name: upload artifact
      uses: actions/upload-artifact@v6
