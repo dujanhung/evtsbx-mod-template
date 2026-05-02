@@ -18,7 +18,10 @@ jobs:
       cd .
    - name: sanitize
      run: |
-      rm .github/* */.github/* .git/* */.git .gitmodules */.gitmodules *.md
+      rm .gitmodules *.md */.git
+      find . -type f -name ".gitmodules" \
+       -exec rm {} \;
+      rmdir .github/* */.github/* .git/* .gitmodules */.gitmodules
    - name: upload artifact
      uses: actions/upload-artifact@v6
      with:
