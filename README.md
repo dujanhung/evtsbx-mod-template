@@ -1,57 +1,99 @@
-# "Evertech Sandbox" MOD template
+# Evertech Sandbox mod template
 
-ready-made "Evertech Sandbox" MOD template in GitHub.
+a ready-to-use GitHub template for creating and maintaining mods for **Evertech Sandbox**.
 
-___
-___
+provides automation for validation, exporting, and repository maintenance.
 
-# features
+---
 
-provides many tools for maintenance and export.
+## features
 
-___
+### file validation
 
-## files validation
+automatically validates project files through GHA triggers.
 
-validates files via GHA triggers.
-
-### JSON
+#### JSON
 
 - syntax check
 - schema check
 
-### Lua
+#### Lua
 
 - syntax check
 
-___
+---
 
-## exports support
+### export support
 
-exports this repo via GHA triggers.
+supports automated exports through GHA triggers.
 
-### download submodules
+#### submodule download
 
-- stores links in `env`
-- uses `git submodule add`
+- stores submodule links in `env`
+- downloads submodules using `git submodule add`
 
-### clean ZIP files
+#### ZIP cleanup
 
-- removes all rubbishes (eg. `*/.git/` , `*/.github/` , `*.md` , etc)
-- moves everything to a folder to prevent from unwanted pollutants bomb after extracting the ZIP file.
+- removes unnecessary files and folders (e.g. `*/.git/`, `*/.github/`, `*.md`, etc.)
+- moves all exported files into a dedicated folder to avoid file pollution after ZIP extraction
 
-___
+---
 
-## fully functional files
+### fully functional template
 
-works in "Evertech Sandbox" as expected.
+includes preconfigured files that work in **Evertech Sandbox** out of the box.
 
-___
-___
+---
 
-# credits
+## credits
 
-- [original Evertech Sandbox API doc](https://vitsum.com/evertech/docs/#/en-US/)
-- [json-schema-validator](https://github.com/dujanhung/json-schema-validator)
-- [extra-lua-preset](https://github.com/dujanhung/extra-lua-preset)
-- [evtsbx-mod-lua-preset](https://github.com/dujanhung/evtsbx-mod-lua-preset)
+<table>
+ <tr>
+  <th>
+   resource
+  </th>
+  <th>
+   description
+  </th>
+ </tr>
+ <tr>
+  <td>
+   <a href="https://vitsum.com/evertech/docs/#/en-US/">
+    Evertech Sandbox API doc
+   </a>
+  </td>
+  <td>
+   official API reference and game scripting documentation
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <a href="https://github.com/dujanhung/json-schema-validator">
+    json-schema-validator
+   </a>
+  </td>
+  <td>
+   used for validating JSON files against predefined schemas during GHA checks
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <a href="https://github.com/dujanhung/extra-lua-preset">
+    extra-lua-preset
+   </a>
+  </td>
+  <td>
+   provides reusable Lua utilities and preset configurations
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <a href="https://github.com/dujanhung/evtsbx-mod-lua-preset">
+    evtsbx-mod-lua-preset
+   </a>
+  </td>
+  <td>
+   provides Lua presets specifically designed for Evertech Sandbox mod development
+  </td>
+ </tr>
+</table>
