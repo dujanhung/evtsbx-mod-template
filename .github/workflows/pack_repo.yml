@@ -31,7 +31,7 @@ jobs:
       mkdir $FOLDER_NAME
       cd $FOLDER_NAME
       shopt -s dotglob nullglob
-      for item in *; do
+      for item in *;do
        if $item==$FOLDER_NAME;then
         continue
        fi
