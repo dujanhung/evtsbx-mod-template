@@ -4,7 +4,7 @@ a ready-to-use GitHub template for creating and maintaining mods for **Evertech 
 
 provides automation for validation, exporting, and repository maintenance.
 
----
+___
 
 # features
 
@@ -21,8 +21,6 @@ automatically validates project files through GHA triggers.
 
 - syntax check
 
----
-
 ## export support
 
 supports automated exports through GHA triggers.
@@ -37,13 +35,11 @@ supports automated exports through GHA triggers.
 - removes unnecessary files and folders (e.g. `*/.git/`, `*/.github/`, `*.md`, etc.)
 - moves all exported files into a dedicated folder to avoid file pollution after ZIP extraction
 
----
-
 ## fully functional template
 
 includes preconfigured files that work in **Evertech Sandbox** out of the box.
 
----
+___
 
 # credits
 
