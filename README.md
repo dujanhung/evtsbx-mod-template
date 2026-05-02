@@ -35,4 +35,4 @@ ___
 
 ### credits
 
-- [json-schema-validator repo](https://github.com/dujanhung/json-schema-validator)
+- [json-schema-validator](https://github.com/dujanhung/json-schema-validator)
