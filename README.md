@@ -32,7 +32,7 @@ packs this repo as ZIP files with submodules via GHA triggers.
 
 ### clean ZIP file
 
-- sanitizes all rubbishes (eg. `*/.git/` , `*/.github/` , `*.md` , etc)
+- remove all rubbishes (eg. `*/.git/` , `*/.github/` , `*.md` , etc)
 - moves everything to a folder to prevent from unwanted pollutants bomb after extracting the ZIP file.
 
 ___
