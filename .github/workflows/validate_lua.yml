@@ -12,6 +12,9 @@ jobs:
   steps:
    - name: checkout repo
      uses: actions/checkout@v5
+   - name: install Luarocks
+     run: sudo apt-get install luarocks
+   - name: install Luacheck
+     run: sudo luarocks install luacheck
    - name: syntax check
-     run: |
-      lua -p *.lua
+     run: luacheck .
