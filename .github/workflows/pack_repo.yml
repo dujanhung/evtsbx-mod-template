@@ -31,8 +31,8 @@ jobs:
       mkdir $FOLDER_NAME
       cd $FOLDER_NAME
       shopt -s dotglob nullglob
-      for i in *;do
-       if $i==$FOLDER_NAME;then
+      for i in . ; do
+       if $i==$FOLDER_NAME ; then
         continue
        fi
        mv -- $i $FOLDER_NAME
