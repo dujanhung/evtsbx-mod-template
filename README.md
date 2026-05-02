@@ -26,7 +26,7 @@ validate files via GHA triggers.
 
 ___
 
-## repo packer
+## exports support
 
 packs this repo via GHA triggers.
 
