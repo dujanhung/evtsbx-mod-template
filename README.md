@@ -32,12 +32,12 @@ packs this repo via GHA triggers.
 
 ### submodules support
 
-- store links in `env`
-- use `git submodule add`
+- stores links in `env`
+- uses `git submodule add`
 
 ### clean ZIP file
 
-- remove all rubbishes (eg. `*/.git/` , `*/.github/` , `*.md` , etc)
+- removes all rubbishes (eg. `*/.git/` , `*/.github/` , `*.md` , etc)
 - moves everything to a folder to prevent from unwanted pollutants bomb after extracting the ZIP file.
 
 ___
