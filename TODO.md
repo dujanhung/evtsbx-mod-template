@@ -17,7 +17,7 @@ ROOT/addons/extra-lua-preset/*
 ROOT/addons/evtsbx-mod-lua-preset/*
 ```
 
-make scripts executable via:
+load scripts via:
 
 ```lua
 dofile("addons_orchestrator/ALL.lua")
