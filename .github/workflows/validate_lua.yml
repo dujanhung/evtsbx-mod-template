@@ -20,4 +20,4 @@ jobs:
       sudo luarocks install luacheck
    - name: syntax check
      run: |
-      find . -name "*.lua" -exec luacheck {} ;
+      find . -name "*.lua" -exec luacheck {} \;
