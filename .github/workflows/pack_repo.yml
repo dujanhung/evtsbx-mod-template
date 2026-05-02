@@ -32,7 +32,9 @@ jobs:
       cd $FOLDER_NAME
       shopt -s dotglob nullglob
       for item in *; do
-       [["$item"=="$target"]]&&continue
+       if "$item"=="$target"; then
+        continue
+       fi
        mv -- "$item" "$target"
       cd .
    - name: upload artifact
