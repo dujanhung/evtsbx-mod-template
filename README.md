@@ -43,11 +43,23 @@ ___
 
 # usage
 
-- open GitHub in web browser (eg. `Chrome`, `Edge`, `Opera`, etc.)
-- click "use this template" to copy this repo as yours.
-- make changes to your repo.
-- validate files with GHA via "run" button or pull requests.
-- export repo with GHA via "run" button.
+## open GitHub in web browser (eg. `Chrome`, `Edge`, `Opera`, etc.)
+
+## click "use this template" to copy this repo as yours.
+
+## make changes to your repo
+
+## validate files
+
+- open GHA
+- click "run" button
+
+also, you could trigger GHA via pull requests.
+
+## export repo
+
+- open GHA
+- click "run" button.
 
 ___
 
