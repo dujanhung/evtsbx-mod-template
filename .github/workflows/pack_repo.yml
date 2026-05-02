@@ -20,7 +20,7 @@ jobs:
      run: |
       find . -type f -name "*.md" -exec rm {} \;
       find . -type f -name ".gitmodules" -exec rm {} \;
-      find . -type f -name "*.git" -exec rm {} \;
+      find . -type f -name ".git" -exec rm {} \;
       find . -type d -name ".github" -exec rmdir {} \;
       find . -type d -name "*/.github" -exec rmdir {} \;
       rmdir .git
