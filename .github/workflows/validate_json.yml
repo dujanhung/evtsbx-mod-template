@@ -9,9 +9,9 @@ jobs:
   steps:
    - name: checkout repo
      uses: actions/checkout@v5
-   - name: syntax check
+   - name: schema syntax check
      run: |
-      file="info.json"
+      file=".github/schema/info.json"
       echo "open $file"
       jq empty "$file"
       echo "validated $file"
