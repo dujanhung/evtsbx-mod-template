@@ -24,6 +24,7 @@ jobs:
       find . -type dir -name ".github/*" -exec rmdir {} \;
       find . -type dir -name "*/.github/*" -exec rmdir {} \;
       rmdir .git/*
+      ls -m .
    - name: upload artifact
      uses: actions/upload-artifact@v6
      with:
