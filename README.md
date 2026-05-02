@@ -11,7 +11,7 @@ this repo has many utilities for maintenance.
 
 ___
 
-## file validations
+## file validation
 
 validate JSON and Lua files in GHA.
 
@@ -23,3 +23,9 @@ validate JSON and Lua files in GHA.
 ### Lua
 
 - basic check
+
+___
+
+## pack repo
+
+packs this repo as ZIP files with submodules.
