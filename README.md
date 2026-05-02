@@ -7,7 +7,7 @@ ___
 
 # features
 
-this repo has many utilities for maintenance.
+many utilities for maintenance.
 
 ___
 
