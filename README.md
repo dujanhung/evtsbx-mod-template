@@ -32,8 +32,8 @@ packs this repo as ZIP files with submodules via GHA triggers.
 
 ### clean ZIP file
 
-- no rubbishes (eg. `*/.git/` , `*/.github/` , `*.md` , etc)
-- no unwanted pollutants bomb after extract.
+- sanitize (eg. `*/.git/` , `*/.github/` , `*.md` , etc)
+- moved all files and folders to a folder
 
 ___
 ___
