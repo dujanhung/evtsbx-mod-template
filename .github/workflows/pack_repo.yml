@@ -30,8 +30,10 @@ jobs:
       cd .
       mkdir $FOLDER_NAME
       cd $FOLDER_NAME
-      find . -type d -name "./*" ! -path "./$FOLDER_NAME" -exec movedir {} ./$FOLDER_NAME \;
-      find . -type f -name "./*" -exec move {} ./$FOLDER_NAME \;
+      shopt -s dotglob nullglob
+      for item in *; do
+       [["$item"=="$target"]]&&continue
+       mv -- "$item" "$target"
       cd .
    - name: upload artifact
      uses: actions/upload-artifact@v6
