@@ -20,15 +20,15 @@ jobs:
    - name: target syntax check
      run: |
       jq empty "$JSON_TARGET"
-   - name: checkout json-validator repo
+   - name: checkout json-schema-validator repo
      uses: actions/checkout@v5
      with:
-      repository: dujanhung/json-validator
-      path: json-validator
+      repository: dujanhung/json-schema-validator
+      path: json-schema-validator
    - name: setup Python
      uses: actions/setup-python@v6
      with:
       python-version: '3.14'
    - name: schema check
      run: |
-      python json-validator/script.py "$JSON_SCHEMA" "$JSON_TARGET"
+      python json-schema-validator/script.py "$JSON_SCHEMA" "$JSON_TARGET"
