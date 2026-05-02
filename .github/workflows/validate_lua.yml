@@ -17,4 +17,4 @@ jobs:
    - name: install Luacheck
      run: sudo luarocks install luacheck
    - name: syntax check
-     run: luacheck .
+     run: luacheck *.lua
