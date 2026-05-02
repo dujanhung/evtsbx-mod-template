@@ -13,7 +13,7 @@ ___
 
 ## files validation
 
-validate files via GHA triggers.
+validates files via GHA triggers.
 
 ### JSON
 
