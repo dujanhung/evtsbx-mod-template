@@ -9,6 +9,17 @@ ___
 
 this repo has many utilities for maintenance.
 
+___
+
 ## file validations
 
 validate JSON and Lua files in GHA.
+
+### JSON
+
+- basic check
+- schema check
+
+### Lua
+
+- basic check
