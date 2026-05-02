@@ -9,7 +9,7 @@ env:
  JSON_SCHEMA: .github/schema/info.json
  JSON_TARGET: info.json
 jobs:
- validate-json:
+ validate:
   runs-on: ubuntu-latest
   steps:
    - name: checkout repo
