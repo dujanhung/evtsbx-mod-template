@@ -21,12 +21,12 @@ jobs:
      run: |
       jq empty "$JSON_TARGET"
    - name: checkout json-validator repo
-     uses: actions/checkout@v4
+     uses: actions/checkout@v5
      with:
       repository: dujanhung/json-validator
       path: json-validator
    - name: setup Python
-     uses: actions/setup-python@v5
+     uses: actions/setup-python@v6
      with:
       python-version: '3.14'
    - name: schema check
