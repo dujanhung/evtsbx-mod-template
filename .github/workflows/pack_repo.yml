@@ -4,6 +4,8 @@ on:
 env:
  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
  ROOT_FOLDER: evtsbx-mod-template
+ LINK_extra: https://github.com/dujanhung/extra-lua-preset
+ LINK_evtsbx_mod: https://github.com/dujanhung/evtsbx-mod-lua-preset
 jobs:
  pack-repo:
   runs-on: ubuntu-latest
@@ -14,8 +16,8 @@ jobs:
      run: |
       mkdir addons
       cd addons
-      git submodule add https://github.com/dujanhung/extra-lua-preset
-      git submodule add https://github.com/dujanhung/evtsbx-mod-lua-preset
+      git submodule add $LINK_extra
+      git submodule add $LINK_evtsbx_mod
       cd .
    - name: sanitize
      run: |
