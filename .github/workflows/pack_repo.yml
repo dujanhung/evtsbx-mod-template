@@ -29,8 +29,8 @@ jobs:
       cd evtsbx-mod-template
    - name: move everything to root folder
      run: |
-      find . -type d -name "./*" ! evtsbx-mod-template -exec move {} evtsbx-mod-template \;
-      move info.json evtsbx-mod-template
+      find . -type d -name "./*" ! evtsbx-mod-template -exec movedir {} evtsbx-mod-template \;
+      find . -type f -name "./*" -exec move {} evtsbx-mod-template \;
    - name: upload artifact
      uses: actions/upload-artifact@v6
      with:
