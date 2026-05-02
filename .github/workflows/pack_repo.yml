@@ -35,7 +35,7 @@ jobs:
      run: |
       echo "."
       ls -m .
-      echo "$ROOT_FOLDER"
+      echo $ROOT_FOLDER
       ls -m "./$ROOT_FOLDER/"
    - name: upload artifact
      uses: actions/upload-artifact@v6
