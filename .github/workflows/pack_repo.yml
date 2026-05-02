@@ -32,6 +32,7 @@ jobs:
    - name: list
      run: |
       ls -m .
+      ls -m $FOLDER_NAME
    - name: upload artifact
      uses: actions/upload-artifact@v6
      with:
