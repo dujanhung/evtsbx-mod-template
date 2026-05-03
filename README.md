@@ -30,7 +30,7 @@ supports automated exports through GHA triggers.
 - stores submodule links in `env`
 - downloads submodules using `git submodule add`
 
-### ZIP cleanup
+### sanitized ZIP
 
 - removes unnecessary files and folders (eg. `*/.git/`, `*/.github/`, `*.md`, etc.)
 - moves all exported files and folders into a dedicated folder to avoid file pollution after ZIP extraction
