@@ -75,8 +75,6 @@ ___
     description
    </th>
   </tr>
- </thread>
- <tbody>
   <tr>
    <td>
     <a href="https://vitsum.com/evertech/docs/#/en-US/">
@@ -117,5 +115,5 @@ ___
     provides reusable Lua utilities specifically designed for Evertech Sandbox MOD development
    </td>
   </tr>
- </tbody>
+ </thread>
 </table>
