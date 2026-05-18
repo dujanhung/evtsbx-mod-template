@@ -58,7 +58,13 @@ ___
 
 ## move it
 
-**Termux** can't modify files in `/storage/emulated/0/Android/data/` . so, you should use **ZArchiver** instead.
+**Termux** can't modify files in:
+
+```txt
+/storage/emulated/0/Android/data/
+```
+
+so, you should use **ZArchiver** instead.
 
 - make sure **Evertech Sandbox** and **ZArchiver** are installed
 - give **ZArchiver** file management permission
@@ -67,6 +73,9 @@ ___
 ```txt
 /storage/emulated/0/Android/data/com.evertechsandbox/files/mods/
 ```
+
+- extract the ZIP file
+- (optional) remove the ZIP file to save memory storage
 
 ## enjoy
 
