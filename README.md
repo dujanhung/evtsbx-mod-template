@@ -70,7 +70,7 @@ so, you should use **ZArchiver** instead.
 
 - make sure [**Evertech Sandbox**](https://play.google.com/store/apps/details?id=com.evertechsandbox) and [**ZArchiver**](https://play.google.com/store/apps/details?id=ru.zdevs.zarchiver) are installed
 - give **ZArchiver** file management permission
-- in **ZArchiver** app, bring the ZIP file to this directory
+- in **ZArchiver** app, bring the ZIP file to this directory:
 
 ```gitignore
 /storage/emulated/0/Android/data/com.evertechsandbox/files/mods/
@@ -82,7 +82,7 @@ so, you should use **ZArchiver** instead.
 ### Windows
 
 - make sure [**Evertech Sandbox**](https://vitsum.itch.io/evertech-sandbox) is installed
-- in **File Explorer** app, bring the ZIP file to this directory
+- in **File Explorer** app, bring the ZIP file to this directory:
 
 ```gitignore
 C://USERNAME/ProgramFiles/AppData/LocalAllows/Vitsum/EvertechSandbox/files/mods/
