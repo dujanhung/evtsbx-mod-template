@@ -58,6 +58,8 @@ ___
 
 ## move it
 
+### Android
+
 **Termux** can't modify files in:
 
 ```gitignore
@@ -76,6 +78,8 @@ so, you should use **ZArchiver** instead.
 
 - extract the ZIP file
 - (optional) remove the ZIP file to save memory storage
+
+### Windows
 
 ## enjoy
 
