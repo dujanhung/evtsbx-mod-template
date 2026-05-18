@@ -115,7 +115,7 @@ ___
     </a>
    </td>
    <td>
-    provides reusable Lua utilities specifically designed for Evertech Sandbox MOD development
+    provides reusable Lua utilities for Evertech Sandbox MOD
    </td>
   </tr>
  </thread>
