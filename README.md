@@ -66,14 +66,16 @@ ___
 # credits
 
 <table>
- <tr>
-  <th>
-   resource
-  </th>
-  <th>
-   description
-  </th>
- </tr>
+ <thread>
+  <tr>
+   <th>
+    resource
+   </th>
+   <th>
+    description
+   </th>
+  </tr>
+ </thread>
  <tr>
   <td>
    <a href="https://vitsum.com/evertech/docs/#/en-US/">
