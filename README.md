@@ -60,7 +60,7 @@ ___
 
 **Termux** can't modify files in:
 
-```pth
+```env
 /storage/emulated/0/Android/data/
 ```
 
@@ -70,7 +70,7 @@ so, you should use **ZArchiver** instead.
 - give **ZArchiver** file management permission
 - in **ZArchiver** app, bring the ZIP file to this directory
 
-```pth
+```env
 /storage/emulated/0/Android/data/com.evertechsandbox/files/mods/
 ```
 
