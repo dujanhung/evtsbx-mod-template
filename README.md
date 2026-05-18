@@ -59,7 +59,7 @@ ___
 
 also, you could trigger GHA via pull requests.
 
-## export repo
+## export MOD
 
 - open GHA
 - click "run" button.
