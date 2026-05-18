@@ -91,7 +91,7 @@ ___
     </a>
    </td>
    <td>
-    a Python script to validate JSON files against predefined schemas during GHA checks
+    a Python script to validate JSON against JSON schema
    </td>
   </tr>
  </thread>
