@@ -24,7 +24,9 @@ validates files through GHA triggers:
 
 ## export support
 
-supports automated exports through GHA triggers.
+export MOD through GHA triggers:
+
+- manual
 
 ### submodule download
 
