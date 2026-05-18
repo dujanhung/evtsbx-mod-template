@@ -75,6 +75,8 @@ ___
     description
    </th>
   </tr>
+ </thread>
+ <thread>
   <tr>
    <td>
     <a href="https://vitsum.com/evertech/docs/#/en-US/">
@@ -85,6 +87,8 @@ ___
     depends on official API documentation
    </td>
   </tr>
+ </thread>
+ <thread>
   <tr>
    <td>
     <a href="https://github.com/dujanhung/json-schema-validator">
@@ -95,6 +99,8 @@ ___
     validates JSON files against predefined schemas during GHA checks
    </td>
   </tr>
+ </thread>
+ <thread>
   <tr>
    <td>
     <a href="https://github.com/dujanhung/extra-lua-preset">
@@ -105,6 +111,8 @@ ___
     provides reusable Lua utilities
    </td>
   </tr>
+ </thread>
+ <thread>
   <tr>
    <td>
     <a href="https://github.com/dujanhung/evtsbx-mod-lua-preset">
