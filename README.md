@@ -58,6 +58,8 @@ ___
 
 ## move it
 
+**Termux** can't modify files in `/storage/emulated/0/Android/data/` . so, you should use **ZArchiver** instead.
+
 - make sure **Evertech Sandbox** and **ZArchiver** are installed
 - give **ZArchiver** file management permission
 - in ZArchiver app, bring the ZIP file to this directory
