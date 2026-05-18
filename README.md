@@ -2,8 +2,6 @@
 
 a ready-to-use GitHub template for creating and maintaining mods for **Evertech Sandbox**.
 
-provides automation for validation, exporting, and repository maintenance.
-
 ___
 
 # features
