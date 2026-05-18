@@ -68,7 +68,7 @@ ___
 
 so, you should use **ZArchiver** instead.
 
-- make sure **Evertech Sandbox** and **ZArchiver** are installed
+- make sure (**Evertech Sandbox**)[https://play.google.com/store/apps/details?id=com.evertechsandbox] and **ZArchiver** are installed
 - give **ZArchiver** file management permission
 - in **ZArchiver** app, bring the ZIP file to this directory
 
