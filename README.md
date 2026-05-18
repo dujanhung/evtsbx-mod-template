@@ -76,7 +76,7 @@ ___
    </th>
   </tr>
  </thread>
- <thread>
+ <tbody>
   <tr>
    <td>
     <a href="https://vitsum.com/evertech/docs/#/en-US/">
@@ -87,7 +87,7 @@ ___
     depends on official API documentation
    </td>
   </tr>
- </thread>
+ </tbody>
  <thread>
   <tr>
    <td>
@@ -100,7 +100,7 @@ ___
    </td>
   </tr>
  </thread>
- <thread>
+ <tbody>
   <tr>
    <td>
     <a href="https://github.com/dujanhung/extra-lua-preset">
@@ -111,7 +111,7 @@ ___
     provides reusable Lua utilities
    </td>
   </tr>
- </thread>
+ </tbody>
  <thread>
   <tr>
    <td>
