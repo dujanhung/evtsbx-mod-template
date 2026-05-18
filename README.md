@@ -84,7 +84,7 @@ so, you should use **ZArchiver** instead.
 - make sure [**Evertech Sandbox**]() is installed
 
 ```gitignore
-C://USERNAME/ProgramFiles/AppData/LocalAllows/Vitsum/EvertechSandbox/mods/
+C://USERNAME/ProgramFiles/AppData/LocalAllows/Vitsum/EvertechSandbox/files/mods/
 ```
 
 ## enjoy
