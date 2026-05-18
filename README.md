@@ -40,7 +40,7 @@ supports automated exports through GHA triggers.
 
 ## fully functional template
 
-includes preconfigured files that work in **Evertech Sandbox** out of the box.
+works in **Evertech Sandbox** out of the box.
 
 ___
 
