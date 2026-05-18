@@ -46,23 +46,15 @@ ___
 
 # usage
 
-## open GitHub in web browser (eg. `Chrome`, `Edge`, `Opera`, etc.)
+## open GitHub in web browser
 
-## click "use this template" to copy this repo as yours, without unwanted "folked" watermark.
+## click "use this template"
 
 ## make changes to your repo
 
 ## validate files
 
-- open GHA
-- click "run" button
-
-also, you could trigger GHA via pull requests.
-
 ## export MOD
-
-- open GHA
-- click "run" button.
 
 ___
 
