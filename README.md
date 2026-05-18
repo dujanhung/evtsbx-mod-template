@@ -82,10 +82,14 @@ so, you should use **ZArchiver** instead.
 ### Windows
 
 - make sure [**Evertech Sandbox**](https://vitsum.itch.io/evertech-sandbox) is installed
+- in **File Explorer** app, bring the ZIP file to this directory
 
 ```gitignore
 C://USERNAME/ProgramFiles/AppData/LocalAllows/Vitsum/EvertechSandbox/files/mods/
 ```
+
+- extract the ZIP file
+- (optional) remove the ZIP file to save memory storage
 
 ## enjoy
 
