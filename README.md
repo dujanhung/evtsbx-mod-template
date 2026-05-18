@@ -58,6 +58,12 @@ ___
 
 ## move it
 
+- make sure **Evertech Sandbox** and **ZArchiver** are installed
+
+```txt
+/storage/emulated/0/Android/data/com.evertechsandbox/files/mods/
+```
+
 ## enjoy
 
 ___
