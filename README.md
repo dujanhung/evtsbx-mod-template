@@ -91,7 +91,7 @@ ___
     </a>
    </td>
    <td>
-    validates JSON files against predefined schemas during GHA checks
+    a script to validate JSON files against predefined schemas during GHA checks
    </td>
   </tr>
  </thread>
