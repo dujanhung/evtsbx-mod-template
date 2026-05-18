@@ -59,6 +59,8 @@ ___
 ## move it
 
 - make sure **Evertech Sandbox** and **ZArchiver** are installed
+- give **ZArchiver** file management permission
+- in ZArchiver app, bring the ZIP file to this directory
 
 ```txt
 /storage/emulated/0/Android/data/com.evertechsandbox/files/mods/
