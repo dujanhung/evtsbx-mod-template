@@ -60,7 +60,7 @@ ___
 
 ### Android
 
-**Termux** can't modify files in:
+**Termux** can't access to:
 
 ```gitignore
 /storage/emulated/0/Android/data/
