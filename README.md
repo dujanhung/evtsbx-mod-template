@@ -76,44 +76,46 @@ ___
    </th>
   </tr>
  </thread>
- <tr>
-  <td>
-   <a href="https://vitsum.com/evertech/docs/#/en-US/">
-    Evertech Sandbox API doc
-   </a>
-  </td>
-  <td>
-   refers to official API documentation
-  </td>
- </tr>
- <tr>
-  <td>
-   <a href="https://github.com/dujanhung/json-schema-validator">
-    json-schema-validator
-   </a>
-  </td>
-  <td>
-   validates JSON files against predefined schemas during GHA checks
-  </td>
- </tr>
- <tr>
-  <td>
-   <a href="https://github.com/dujanhung/extra-lua-preset">
-    extra-lua-preset
-   </a>
-  </td>
-  <td>
-   provides reusable Lua utilities
-  </td>
- </tr>
- <tr>
-  <td>
-   <a href="https://github.com/dujanhung/evtsbx-mod-lua-preset">
-    evtsbx-mod-lua-preset
-   </a>
-  </td>
-  <td>
-   provides Lua presets specifically designed for Evertech Sandbox MOD development
-  </td>
- </tr>
+ <tbody>
+  <tr>
+   <td>
+    <a href="https://vitsum.com/evertech/docs/#/en-US/">
+     Evertech Sandbox API doc
+    </a>
+   </td>
+   <td>
+    depends on official API documentation
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <a href="https://github.com/dujanhung/json-schema-validator">
+     json-schema-validator
+    </a>
+   </td>
+   <td>
+    validates JSON files against predefined schemas during GHA checks
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <a href="https://github.com/dujanhung/extra-lua-preset">
+     extra-lua-preset
+    </a>
+   </td>
+   <td>
+    provides reusable Lua utilities
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <a href="https://github.com/dujanhung/evtsbx-mod-lua-preset">
+     evtsbx-mod-lua-preset
+    </a>
+   </td>
+   <td>
+    provides reusable Lua utilities specifically designed for Evertech Sandbox MOD development
+   </td>
+  </tr>
+ </tbody>
 </table>
