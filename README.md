@@ -10,7 +10,10 @@ ___
 
 ## file validation
 
-automatically validates project files through GHA triggers.
+validates files through GHA triggers:
+
+- manual
+- pull request
 
 ### JSON
 
