@@ -19,10 +19,6 @@ ___
 
 ## export support
 
-export MOD through GHA triggers:
-
-- manual
-
 ### submodule download
 
 - stores submodule links in `env`
