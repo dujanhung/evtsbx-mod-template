@@ -29,7 +29,7 @@ ___
 - removes unnecessary files and folders (eg. `*/.git/`, `*/.github/`, `*.md`, etc.)
 - moves all exported files and folders into a dedicated folder to avoid file pollution after ZIP extraction
 
-## fully functional template
+## fully functional
 
 works in **Evertech Sandbox** out of the box.
 
