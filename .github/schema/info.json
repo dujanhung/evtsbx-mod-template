@@ -4,7 +4,7 @@
  "author":"string",
  "version":"string",
  "preview|@required,external_file(png)":"string",
- "simpleblocks|array_flag(allow_multiple)":[
+ "simpleblocks|@required,array_flag(allow_multiple)":[
   {
    "uuid|@required,@unique":"string",
    "name":"string",
