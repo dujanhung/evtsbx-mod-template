@@ -1,6 +1,6 @@
 # Evertech Sandbox MOD template
 
-a ready-to-use GitHub template for creating and maintaining mods for **Evertech Sandbox**.
+a ready-to-use GitHub template for maintaining mods for **Evertech Sandbox**.
 
 ___
 
