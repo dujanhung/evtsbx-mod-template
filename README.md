@@ -8,11 +8,6 @@ ___
 
 ## file validation
 
-validates files through GHA triggers:
-
-- manual
-- pull request
-
 ### JSON
 
 - syntax check
