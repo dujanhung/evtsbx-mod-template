@@ -47,7 +47,7 @@ ___
 
 ## export MOD
 
-## move it
+## move it to Evertech Sandbox folders
 
 ### Android
 
