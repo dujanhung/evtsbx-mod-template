@@ -33,9 +33,9 @@
    "connections|array_flag(allow_multiple)":[
     {
      "type|@required,enum(signalReceiver,signalSender,signalReceiverSender)":"string",
-     "color|hex_flag(tag,no_alpha)":"string",
-     "connectionsLimit|range_flag(unsigned)":"int",
-     "relativePosition":{
+     "color|@required,hex_flag(tag,no_alpha)":"string",
+     "connectionsLimit|@required,range_flag(unsigned)":"int",
+     "relativePosition|@required":{
       "X":"float",
       "Y":"float",
       "Z":"float"
