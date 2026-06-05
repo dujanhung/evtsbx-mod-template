@@ -76,7 +76,7 @@ so, you should use **ZArchiver** instead.
 - in **File Explorer** app, bring the ZIP file to this directory:
 
 ```gitignore
-C://USERNAME/ProgramFiles/AppData/LocalAllows/Vitsum/EvertechSandbox/files/mods/
+C://Users/USERNAME/ProgramFiles/AppData/LocalLow/Vitsum/EvertechSandbox/files/mods/
 ```
 
 - extract the ZIP file
