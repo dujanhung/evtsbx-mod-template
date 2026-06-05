@@ -1,20 +1,20 @@
 {
- "name":"string",
- "description":"string",
- "author":"string",
- "version":"string",
- "preview|@required,external_file(png)":"string",
- "simpleblocks|@required,array_flag(allow_multiple)":[
+ "name|@required":"string",
+ "description|@required":"string",
+ "author|@required":"string",
+ "version|@required":"string",
+ "preview|@required,filepath_flag(png)":"string",
+ "simpleblocks|@required,list_flag(allow_multiple)":[
   {
    "uuid|@required,@unique":"string",
-   "name":"string",
-   "description":"string",
-   "icon|@required,external_file(png)":"string",
-   "dif|external_file(png)":"string",
-   "nor|external_file(png)":"string",
-   "met|external_file(png)":"string",
-   "mesh|@required,external_file(obj)":"string",
-   "script|external_file(lua)":"string",
+   "name|@required":"string",
+   "description|@required":"string",
+   "icon|@required,filepath_flag(png)":"string",
+   "dif|filepath_flag(png)":"string",
+   "nor|filepath_flag(png)":"string",
+   "met|filepath_flag(png)":"string",
+   "mesh|@required,filepath_flag(obj)":"string",
+   "script|filepath_flag(lua)":"string",
    "collider|enum(wheel,sizable_wheel)":"string",
    "normScale|range_flag(exp)":"float",
    "smoothness|range_flag(linear)":"float",
@@ -30,10 +30,10 @@
    "meshOptions|need(collider.value==collider.enum.slot(2))":{
     "OffsetY":"float"
    },
-   "connections|array_flag(allow_multiple)":[
+   "connections|list_flag(allow_multiple)":[
     {
      "type|@required,enum(signalReceiver,signalSender,signalReceiverSender)":"string",
-     "color|@required,hex_flag(tag,no_alpha)":"string",
+     "color|@required,hex_flag(tag,no-alpha)":"string",
      "connectionsLimit|@required,range_flag(unsigned)":"int",
      "relativePosition|@required":{
       "X":"float",
