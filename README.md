@@ -2,6 +2,8 @@
 
 a ready-to-use GitHub template for MOD blocks in **Evertech Sandbox**.
 
+<img src="https://pp.userapi.com/c846123/v846123584/1028ef/H1jO6KtEg_I.jpg"/>
+
 ___
 
 # features
