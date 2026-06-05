@@ -2,11 +2,15 @@
 
 a ready-to-use GitHub template for MOD blocks in **Evertech Sandbox**.
 
+<table><tr><td>
+
 <img src="https://github.com/dujanhung/evtsbx-gallery/blob/main/blueprint/sphere.png"/>
 
 <sub>
 the power of scripts to generate a sphere.
 </sub>
+
+</td></tr></table>
 
 ___
 
