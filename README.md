@@ -5,7 +5,7 @@ a ready-to-use GitHub template for MOD blocks in **Evertech Sandbox**.
 <img src="https://github.com/dujanhung/evtsbx-gallery/blob/main/blueprint/sphere.png"/>
 
 <sub>
-this image represents the power of scripts to generate a sphere. players could not build it directly.
+this image represents the power of scripts to generate a sphere.
 </sub>
 
 ___
