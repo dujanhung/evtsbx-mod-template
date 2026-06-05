@@ -4,6 +4,10 @@ a ready-to-use GitHub template for MOD blocks in **Evertech Sandbox**.
 
 <img src="https://github.com/dujanhung/evtsbx-gallery/blob/main/blueprint/sphere.png"/>
 
+<sub>
+the image is used for advertisement purposes. this repo don't reflect like that.
+</sub>
+
 ___
 
 # features
