@@ -112,7 +112,7 @@ ___
  <tbody>
   <tr>
    <td>
-    <a href="https://vitsum.com/evertech/docs/#/en-US/">
+    <a href="https://evertechsandbox.com/evertech/docs/#/en-US/">
      Evertech Sandbox API doc
     </a>
    </td>
