@@ -23,6 +23,6 @@ load scripts via:
 dofile("addons_orchestrator/ALL.lua")
 ```
 
-as a workaround, you should open GHA, go to "pack repo", and trigger it.
+as a workaround, you should open GHA, go to "export", and trigger it.
 
 https://github.com/dujanhung/evtsbx-mod-template/blob/main/.github/workflows/pack_repo.yml
